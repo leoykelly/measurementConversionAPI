@@ -37,5 +37,5 @@ This API will enable third-party developers to build applications, which will co
  
 ### [Project Plan](https://github.com/sandoschwert/measurementConversionAPI/blob/master/ProjectPlan.md)
 
-### [Progress Log](https://github.com/sandoschwert/measurementConversionAPI/blob/master/ProgressLog.md)
+### [Progress Log](https://github.com/sandoschwert/measurementConversionAPI/blob/master/ProjectLog.md)
 
