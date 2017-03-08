@@ -12,7 +12,7 @@
 - [X] Progress log entries
 
 ### Week 2
-- [ ] Create project structure in IntelliJ
+- [X] Create project structure in IntelliJ
 - [ ] Create database and tables
 - [ ] Add Log4J
 - [ ] Add JUnit
