@@ -10,5 +10,5 @@
 | 3/2/17 | Create Class Diagram, ERD, and database tables | Kyle, Sandi  |  |
 |Week 2 | | | |
 | 3/7/17 | Create Project Log, Create project structure in intelliJ, stubbed out some classes and methods | Sandi |  |
-
+| 3/7/17 | Merged to master | Kelly | |
 
