@@ -4,7 +4,7 @@ package edu.matc;
  * Created by Sandi Schwert on 3/7/17.
  */
 public class Math {
-    // TODO: Needs a constructor.
+
     double quantity;
     double convertedQuantity;
 
