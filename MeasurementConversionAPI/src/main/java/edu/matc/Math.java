@@ -49,6 +49,7 @@ public class Math {
     }
 
     public double convertCupToTbs(double quantity) {
+        convertedQuantity = quantity * 16;
         return convertedQuantity;
     }
 
