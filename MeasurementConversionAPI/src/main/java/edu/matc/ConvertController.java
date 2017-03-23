@@ -5,10 +5,8 @@ package edu.matc;
  */
 public class ConvertController {
 
-    String fromType;
-    String toType;
-    double measurementAmount;
-    Math kitchenMeasurementConverter = new Math();
+    private ConversionSet conversionSet;
+
 
     /**
      * Empty constructor
@@ -17,24 +15,25 @@ public class ConvertController {
     public ConvertController() {
     }
 
-    /**
-     * Constructor to bring in params 1 through three
-     * Author: KAR 3/22/17
-     * */
-    public ConvertController(String fromTypeParameter, String toTypeParameter, String measurementAmountParameter) {
-        fromType = fromTypeParameter.toLowerCase();
-        toType = toTypeParameter.toLowerCase();
-        measurementAmount = Double.parseDouble(measurementAmountParameter);
+    public ConvertController(ConversionSet conversionSet) {
 
+        this.conversionSet = conversionSet;
     }
 
-
+    public String convertMeasurement() {
+        double resultDouble = checkFromTypeCategory();
+        String formattedResult = formatResults(resultDouble);
+        return formattedResult;
+    }
     /**
      * The purpose of this method is to determine which category of measurement the from type belongs to.
      * Author: KAR 3/22/17
      * @return
      */
     public double checkFromTypeCategory() {
+        String fromType = conversionSet.getFromType();
+        String toType = conversionSet.getToType();
+        double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
         if (fromType == "cup" || fromType == "teaspoon" || fromType == "tablespoon" || fromType == "quart" || fromType == "gallon") {
@@ -55,6 +54,12 @@ public class ConvertController {
 
         return convertedMeasurement;
 
+    }
+
+    private String formatResults(Double result) {
+        String formatedResults = "<h1>" + result + "</h1>";
+
+        return formatedResults;
     }
 
 

@@ -4,12 +4,15 @@ package edu.matc;
  * Created by Kelly on 3/22/2017.
  */
 public class ConvertKitchenMeasurements {
-    ConversionSet conversionSet = new ConversionSet();
-    Math kitchenMeasurementConverter = new Math();
+    private ConversionSet conversionSet;
+    private Math kitchenMeasurementConverter = new Math();
+
     public ConvertKitchenMeasurements() {
 
     }
+
     public ConvertKitchenMeasurements(ConversionSet conversionSet) {
+
         this.conversionSet = conversionSet;
     }
 
