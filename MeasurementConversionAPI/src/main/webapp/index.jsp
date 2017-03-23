@@ -1,7 +1,7 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<form method="get" action="/ping">
+<form method="get" action="/measurement">
     <label for="fromType">From Type</label>
     <input type="text" id="fromType">
 

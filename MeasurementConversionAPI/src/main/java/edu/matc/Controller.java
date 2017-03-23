@@ -23,7 +23,7 @@ public class Controller extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String url = "/results.jsp";
 
-        Convert converter = new Convert(fromMeasurnment, toMeasurement, measurementAmount );
+        ConvertController converter = new ConvertController(fromMeasurnment, toMeasurement, measurementAmount );
 
 
 
