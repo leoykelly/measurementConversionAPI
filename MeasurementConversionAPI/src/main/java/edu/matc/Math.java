@@ -8,6 +8,11 @@ public class Math {
     double quantity;
     double convertedQuantity;
 
+    public Math(double quantity, double convertedQuantity) {
+        this.quantity = quantity;
+        this.convertedQuantity = convertedQuantity;
+    }
+
     //Teaspoon conversion methods
     public double convertTspToTbs(double quantity) {
         convertedQuantity = quantity * 0.333333;
