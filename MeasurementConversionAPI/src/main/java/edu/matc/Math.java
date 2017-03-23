@@ -43,20 +43,25 @@ public class Math {
         return convertedQuantity;
     }
 
+    //TODO Start here!!!!!
     //Cup conversion methods
     public double convertCupToTsp(double quantity) {
+        convertedQuantity = quantity * 48;
         return convertedQuantity;
     }
 
     public double convertCupToTbs(double quantity) {
+        convertedQuantity = quantity * 16;
         return convertedQuantity;
     }
 
     public double convertCupToQuart(double quantity) {
+        convertedQuantity = quantity * 0.25;
         return convertedQuantity;
     }
 
     public double convertCupToGallon(double quantity) {
+        convertedQuantity = quantity * 0.0625;
         return convertedQuantity;
     }
 
