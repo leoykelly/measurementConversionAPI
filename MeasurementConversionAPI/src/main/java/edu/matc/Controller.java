@@ -25,15 +25,27 @@ public class Controller extends HttpServlet {
             throws ServletException, IOException {
 
         ServletContext servletContext = getServletContext();
-        //EmployeeDirectory employeeDirectory
-               // = (EmployeeDirectory)servletContext.getAttribute("employeeDirectory");
-        String fromType = request.getParameter("fromType");
-        String toType = request.getParameter("toType");
-        String measurementAmount = request.getParameter("amount");
-        String returnType = request.getParameter("returnType");
 
-        if (fromType == null || fromType.isEmpty() || (toType == null) || toType.isEmpty() || measurementAmount == null
-                || measurementAmount.isEmpty() || returnType == null || returnType.isEmpty()) {
+        conversionSet.setFromType(request.getParameter("fromType"));
+        conversionSet.setToType(request.getParameter("toType"));
+
+        String amount = request.getParameter("amount");
+
+        conversionSet.setReturnType(request.getParameter("returnType"));
+
+        if(amount == null || amount.isEmpty()) {
+            servletContext.setAttribute("message",
+                    "Please enter valid measurement amount");
+            String url = "/error.jsp";
+            response.sendRedirect(url);
+        } else {
+            conversionSet.setMeasurementAmount(Double.parseDouble(amount));
+        }
+
+        if (conversionSet.getFromType() == null || conversionSet.getFromType().isEmpty()
+                || (conversionSet.getFromType() == null) || conversionSet.getToType().isEmpty()
+                || conversionSet.getReturnType() == null
+                || conversionSet.getReturnType().isEmpty()) {
 
 
             servletContext.setAttribute("message",
