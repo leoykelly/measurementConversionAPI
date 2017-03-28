@@ -47,7 +47,7 @@ public class ConvertController {
 
         }
 
-        if (fromType == "inch" || fromType == "centemeter" || fromType == "feet" || fromType == "meter" || fromType == "kilometer" || fromType == "mile") {
+        if (fromType == "inch" || fromType == "centimeter" || fromType == "feet" || fromType == "meter" || fromType == "kilometer" || fromType == "mile") {
 
         }
 
