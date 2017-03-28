@@ -15,37 +15,28 @@ import java.io.IOException;
  * Created by Kelly on 3/21/2017.
  */
 @WebServlet(
-        name = "Ping Test",
+        name = "Convert Measurement",
         urlPatterns = {"/measurement"}
 )
 public class Controller extends HttpServlet {
-    private ConversionSet conversionSet;
+
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         ServletContext servletContext = getServletContext();
 
-        conversionSet.setFromType(request.getParameter("fromType"));
-        conversionSet.setToType(request.getParameter("toType"));
-
+        String fromType = request.getParameter("fromType");
+        String toType = request.getParameter("toType");
         String amount = request.getParameter("amount");
+        String returnType = request.getParameter("returnType");
 
-        conversionSet.setReturnType(request.getParameter("returnType"));
 
-        if(amount == null || amount.isEmpty()) {
-            servletContext.setAttribute("message",
-                    "Please enter valid measurement amount");
-            String url = "/error.jsp";
-            response.sendRedirect(url);
-        } else {
-            conversionSet.setMeasurementAmount(Double.parseDouble(amount));
-        }
 
-        if (conversionSet.getFromType() == null || conversionSet.getFromType().isEmpty()
-                || (conversionSet.getFromType() == null) || conversionSet.getToType().isEmpty()
-                || conversionSet.getReturnType() == null
-                || conversionSet.getReturnType().isEmpty()) {
+        if (fromType == null || fromType.isEmpty()
+                || toType == null || toType.isEmpty()
+                || returnType == null || returnType.isEmpty()
+                || amount == null || amount.isEmpty()) {
 
 
             servletContext.setAttribute("message",
@@ -54,8 +45,16 @@ public class Controller extends HttpServlet {
             response.sendRedirect(url);
         } else {
 
-            ConvertController convertController = new ConvertController(conversionSet);
-            String conversionResult = convertController.convertMeasurement();
+            ConvertController convertController = new ConvertController();
+
+            ConversionSet conversionSet = new ConversionSet();
+
+            conversionSet.setFromType(fromType);
+            conversionSet.setToType(toType);
+            conversionSet.setMeasurementAmount(Double.parseDouble(amount));
+            conversionSet.setReturnType(returnType);
+
+            String conversionResult = convertController.convertMeasurement(conversionSet);
 
             servletContext.setAttribute("results", conversionResult);
 
