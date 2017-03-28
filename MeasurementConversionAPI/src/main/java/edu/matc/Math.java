@@ -5,12 +5,11 @@ package edu.matc;
  */
 public class Math {
 
-    double quantity;
+
     double convertedQuantity;
 
-    public Math(double quantity, double convertedQuantity) {
-        this.quantity = quantity;
-        this.convertedQuantity = convertedQuantity;
+    public Math() {
+
     }
 
     //Teaspoon conversion methods
