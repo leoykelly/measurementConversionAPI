@@ -15,13 +15,10 @@ public class ConvertController {
     public ConvertController() {
     }
 
-    public ConvertController(ConversionSet conversionSet) {
 
-        this.conversionSet = conversionSet;
-    }
 
-    public String convertMeasurement() {
-        double resultDouble = checkFromTypeCategory();
+    public String convertMeasurement(ConversionSet conversionSet) {
+        double resultDouble = checkFromTypeCategory(conversionSet);
         String formattedResult = formatResults(resultDouble);
         return formattedResult;
     }
@@ -30,7 +27,7 @@ public class ConvertController {
      * Author: KAR 3/22/17
      * @return
      */
-    public double checkFromTypeCategory() {
+    public double checkFromTypeCategory(ConversionSet conversionSet) {
         String fromType = conversionSet.getFromType();
         String toType = conversionSet.getToType();
         double measurementAmount = conversionSet.getMeasurementAmount();
