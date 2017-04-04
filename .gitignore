@@ -2,7 +2,11 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
+<<<<<<< HEAD
 MeasurementConversionAPI/.idea/workspace.xml
+=======
+.idea/workspace.xml
+>>>>>>> 27f59675355f2ee6ba1d2ce4c062fd21d1c3e713
 .idea/tasks.xml
 .idea/dictionaries
 .idea/vcs.xml

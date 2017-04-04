@@ -56,7 +56,7 @@ public class Controller extends HttpServlet {
 
             String conversionResult = convertController.convertMeasurement(conversionSet);
 
-            servletContext.setAttribute("results", conversionResult);
+            servletContext.setAttribute("result", conversionResult);
 
             String url = "/result.jsp";
 
