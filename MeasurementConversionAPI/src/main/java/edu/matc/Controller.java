@@ -29,7 +29,7 @@ public class Controller extends HttpServlet {
         String fromType = request.getParameter("fromType");
         String toType = request.getParameter("toType");
         String amount = request.getParameter("amount");
-        String returnType = request.getParameter("returnType");
+        String returnType = request.getParameter("returnType").toLowerCase();
 
 
 
