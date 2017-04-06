@@ -1,5 +1,12 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: student
 Created-By: IntelliJ IDEA
 Build-Jdk: 1.8.0_111
+=======
+Archiver-Version: Plexus Archiver
+Built-By: Kelly
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_71
+>>>>>>> b6a8e505a1bc626ac038605ab629614615b01744
 
