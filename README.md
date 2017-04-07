@@ -2,6 +2,8 @@
 
 ## Team project - REST API development
 
+* Helpful link that explains basic branching and merging [Git Branching] (https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+
 ### Pitch
 Do you ever have your hands full in the kitchen and suddenly need to know how many tablespoons are in one cup of butter? Or how many cups of milk are in a gallon? Then this is the API for you! Add it to your existing recipe blog site for the convenience your users or include it in your own micro app for your smartphone. Our handy service is perfect for the chef in your home.
 
