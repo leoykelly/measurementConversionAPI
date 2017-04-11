@@ -1,39 +1,36 @@
 package edu.matc;
 
-import com.google.gson.Gson;
-import com.sun.deploy.net.HttpResponse;
 
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
+
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Response;
 import java.io.IOException;
-
 
 
 /**
  * Created by Kelly on 3/21/2017.
  */
-@WebServlet(
-        name = "Convert Measurement",
-        urlPatterns = {"/measurement"}
-)
-public class Controller extends HttpServlet {
 
 
+@Path("/measurement")
+public class Controller {
+
+    String conversionResult;
+
+    @GET
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        ServletContext servletContext = getServletContext();
 
         String fromType = request.getParameter("fromType");
         String toType = request.getParameter("toType");
         String amount = request.getParameter("amount");
         String returnType = request.getParameter("returnType").toLowerCase();
-
 
 
         if (fromType == null || fromType.isEmpty()
@@ -42,10 +39,6 @@ public class Controller extends HttpServlet {
                 || amount == null || amount.isEmpty()) {
 
 
-            servletContext.setAttribute("message",
-                    "Please enter valid information");
-            String url = "/error.jsp";
-            response.sendRedirect(url);
         } else {
 
             ConvertController convertController = new ConvertController();
@@ -57,24 +50,18 @@ public class Controller extends HttpServlet {
             conversionSet.setMeasurementAmount(Double.parseDouble(amount));
             conversionSet.setReturnType(returnType);
 
-            String conversionResult = convertController.convertMeasurement(conversionSet);
-
-            servletContext.setAttribute("result", conversionResult);
-
-            String json = new Gson().toJson(conversionResult);
-            response.setContentType("application/json");
-            response.setCharacterEncoding("UTF-8");
-            response.getWriter().write(json);
-
-
-
-            RequestDispatcher dispatcher
-                    = getServletContext().getRequestDispatcher(url);
-            dispatcher.forward(request, response);
-
-            return response;
+            conversionResult = convertController.convertMeasurement(conversionSet);
         }
     }
 
+        @Produces("text/plain")
+        public Response getMessage() {
 
-}
+            return Response.status(200).entity(conversionResult).build();
+        }
+
+
+
+    }
+
+
