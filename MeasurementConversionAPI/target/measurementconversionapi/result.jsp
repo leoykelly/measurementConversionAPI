@@ -11,10 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-<<<<<<< HEAD
-<h1>Your restult: ${result}</h1>
-=======
+
 <h1><%=request.getAttribute("result")%></h1>
->>>>>>> 9db6e6856785a7b91dd83c099ffa008bb09ba04a
+
 </body>
 </html>

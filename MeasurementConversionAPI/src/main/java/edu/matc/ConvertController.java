@@ -23,7 +23,7 @@ public class ConvertController {
 
     public String convertMeasurement(ConversionSet conversionSet) {
         double resultDouble = checkFromTypeCategory(conversionSet);
-        String formattedResult = formatResults(resultDouble, conversionSet);
+        String formattedResult = Double.toString(resultDouble);
         return formattedResult;
     }
     /**
@@ -60,20 +60,7 @@ public class ConvertController {
 
     }
 
-    private String formatResults(Double result, ConversionSet conversionSet) {
-        String formatedResults = "";
 
-        String returnType = conversionSet.getReturnType();
-        String toType = conversionSet.getToType();
-
-        if(returnType == "html") {
-            formatedResults = "<h1>" + result + "</h1>";
-
-        } else if (returnType == "json") {
-            formatedResults = "result {" + toType + " : " + result + "}";
-        }
-        return formatedResults;
-    }
 
 
 

@@ -1,18 +1,39 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-<form method="get" action="/measurement">
-    <label for="fromType">From Type</label>
-    <input type="text" id="fromType">
+<header>Measurement Conversion API</header>
 
-    <label for="amount">Amount</label>
-    <input type="text" id="amount">
+<h1>Purpose</h1>
 
-    <label for="toType">To Type</label>
-    <input type="text" id="toType">
+<p>The Measurement Conversion API is to make conversions between temperature units, length units, and kitchen units. </p>
 
-    <input type="submit" value="Convert Me!" />
+<h1>How to make a request.</h1>
+<p>Send a request with 4 query parameters to 52.14.164.30</p>
+<p>Example: 52.14.164.30/?toType=cup&fromType=tablespoon&amount=2&returnType=html</p>
 
-</form>
+<h4>Kitchen Units</h4>
+<ul>
+    <li>Gallon</li>
+    <li>Quart</li>
+    <li>Cup</li>
+    <li>TableSpoon</li>
+    <li>Teaspoon</li>
+</ul>
+
+<h4>Temperature Units</h4>
+<ul>
+    <li>Fahrenheit</li>
+    <li>Celsius</li>
+    <li>Calvin</li>
+</ul>
+
+<h4>Length Units</h4>
+<ul>
+    <li>Inch</li>
+    <li>Feet</li>
+    <li>Mile</li>
+    <li>Centimeter</li>
+    <li>Meter</li>
+    <li>Kilometer</li>
+</ul>
 </body>
 </html>

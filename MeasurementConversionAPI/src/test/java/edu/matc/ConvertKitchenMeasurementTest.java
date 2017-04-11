@@ -1,11 +1,6 @@
 package edu.matc;
 
 import org.junit.Before;
-import org.junit.Test;
-
-import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by sandi schwert on 4/10/17.
@@ -17,7 +12,6 @@ public class ConvertKitchenMeasurementTest {
     public void setup() {
         measurement = new ConvertKitchenMeasurements();
     }
-
 
 
 
