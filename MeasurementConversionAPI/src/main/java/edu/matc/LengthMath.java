@@ -69,6 +69,22 @@ public class LengthMath {
         return convertedLength;
     }
 
+    /* Miles */
+    public double convertMileToMillimeter(double length) {
+        double convertedLength = length * 1.609e+6;
+        return convertedLength;
+    }
+
+    public double convertMileToCentimeter(double length) {
+        double convertedLength = length * 160934;
+        return convertedLength;
+    }
+
+    public double convertMileToMeter(double length) {
+        double convertedLength = length * 1609.34;
+        return convertedLength;
+    }
+
     public double convertMileToKilometer(double length) {
         double convertedLength = length * 1.60934;
         return convertedLength;
@@ -91,7 +107,11 @@ public class LengthMath {
         return convertedLength;
     }
 
-
+    public double convertMillimeterToMile (double length) {
+        double convertedLength = length * 6.21371e-7;
+        return convertedLength;
+    }
+    
 
     /* Centimeters */
     public double convertCentimeterToInch (double length) {
