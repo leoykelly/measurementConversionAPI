@@ -18,11 +18,7 @@ public class ConvertKitchenMeasurementTest {
         measurement = new ConvertKitchenMeasurements();
     }
 
-    @Test
-    public void () {
-        List<User> users = dao.getAllUsers();
-        assertTrue(users.size() > 0);
-    }
+
 
 
 }
