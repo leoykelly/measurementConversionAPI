@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Your restult: ${result}</h1>
+
+<h1><%=request.getAttribute("result")%></h1>
+
 </body>
 </html>

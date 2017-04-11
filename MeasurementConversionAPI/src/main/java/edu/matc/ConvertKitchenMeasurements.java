@@ -1,11 +1,16 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by Kelly on 3/22/2017.
  */
 public class ConvertKitchenMeasurements {
+
+    private final Logger log = Logger.getLogger(this.getClass());
+
     private ConversionSet conversionSet;
-    private Math kitchenMeasurementConverter = new Math();
+    private KitchenMath kitchenMeasurementConverter = new KitchenMath();
 
     public ConvertKitchenMeasurements() {
 

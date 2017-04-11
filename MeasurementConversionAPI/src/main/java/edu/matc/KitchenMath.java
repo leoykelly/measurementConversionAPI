@@ -1,11 +1,16 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by Sandi Schwert on 3/7/17.
+ * Written by Kyle
  */
-public class Math {
+public class KitchenMath {
 
-    public Math() {
+    private final Logger log = Logger.getLogger(this.getClass());
+
+    public KitchenMath() {
     }
 
     //Teaspoon conversion methods
@@ -115,3 +120,4 @@ public class Math {
 
 
 } //end edu.matc.Math Class. Heh.
+//Lol, that's a good one, Kyle.
