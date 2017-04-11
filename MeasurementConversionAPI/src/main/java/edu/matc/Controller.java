@@ -1,5 +1,8 @@
 package edu.matc;
 
+import com.google.gson.Gson;
+import com.sun.deploy.net.HttpResponse;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -58,11 +61,20 @@ public class Controller extends HttpServlet {
 
             servletContext.setAttribute("result", conversionResult);
 
-            String url = "/result.jsp";
+            String json = new Gson().toJson(conversionResult);
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().write(json);
+
+
 
             RequestDispatcher dispatcher
                     = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
+
+            return response;
         }
     }
+
+
 }
