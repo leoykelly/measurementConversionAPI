@@ -1,9 +1,13 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by sandi schwert on 4/6/17.
  */
 public class LengthMath {
+
+    private final Logger log = Logger.getLogger(this.getClass());
 
     public LengthMath() {
     }

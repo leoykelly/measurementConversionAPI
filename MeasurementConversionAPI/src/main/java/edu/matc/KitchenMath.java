@@ -1,10 +1,14 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by Sandi Schwert on 3/7/17.
  * Written by Kyle
  */
 public class KitchenMath {
+
+    private final Logger log = Logger.getLogger(this.getClass());
 
     public KitchenMath() {
     }

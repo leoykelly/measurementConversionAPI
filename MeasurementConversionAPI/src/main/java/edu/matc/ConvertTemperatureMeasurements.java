@@ -1,9 +1,13 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by sandi schwert on 4/10/17.
  */
 public class ConvertTemperatureMeasurements {
+
+    private final Logger log = Logger.getLogger(this.getClass());
 
     private ConversionSet conversionSet;
     private TemperatureMath tempMeasurementConverter = new TemperatureMath();
@@ -24,7 +28,7 @@ public class ConvertTemperatureMeasurements {
      * @return a double which is the convertedMeasurement after calling the corresponding method
      */
 
-    public double checkLengthValueFromType() {
+    public double checkTempValueFromType() {
         String fromType = conversionSet.getFromType();
         double convertedMeasurement = 0.00;
 

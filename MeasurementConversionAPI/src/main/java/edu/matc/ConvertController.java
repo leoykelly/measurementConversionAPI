@@ -1,9 +1,13 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by Sandi Schwert on 3/7/17.
  */
 public class ConvertController {
+
+    private final Logger log = Logger.getLogger(this.getClass());
 
     private ConversionSet conversionSet;
 
@@ -40,7 +44,10 @@ public class ConvertController {
 
         }
 
-        if (fromType == "fahrenheit" || fromType == "celsius") {
+        if (fromType == "fahrenheit" || fromType == "celsius" || fromType == "kelvin") {
+
+            ConvertTemperatureMeasurements tempMeasurement = new ConvertTemperatureMeasurements();
+            tempMeasurement.checkTempValueFromType();
 
         }
 

@@ -1,9 +1,13 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by student on 4/10/17.
  */
 public class ConvertLengthMeasurements {
+
+    private final Logger log = Logger.getLogger(this.getClass());
 
     private ConversionSet conversionSet;
     private LengthMath lengthMeasurementConverter = new LengthMath();
