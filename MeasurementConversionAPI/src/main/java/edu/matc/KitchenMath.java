@@ -2,10 +2,11 @@ package edu.matc;
 
 /**
  * Created by Sandi Schwert on 3/7/17.
+ * Written by Kyle
  */
-public class Math {
+public class KitchenMath {
 
-    public Math() {
+    public KitchenMath() {
     }
 
     //Teaspoon conversion methods
@@ -115,3 +116,4 @@ public class Math {
 
 
 } //end edu.matc.Math Class. Heh.
+//Lol, that's a good one, Kyle.

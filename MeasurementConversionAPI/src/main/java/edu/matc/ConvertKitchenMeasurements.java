@@ -5,7 +5,7 @@ package edu.matc;
  */
 public class ConvertKitchenMeasurements {
     private ConversionSet conversionSet;
-    private Math kitchenMeasurementConverter = new Math();
+    private KitchenMath kitchenMeasurementConverter = new KitchenMath();
 
     public ConvertKitchenMeasurements() {
 

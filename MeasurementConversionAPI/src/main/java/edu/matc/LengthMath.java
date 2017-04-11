@@ -1,59 +1,81 @@
 package edu.matc;
 
 /**
- * Created by student on 4/6/17.
+ * Created by sandi schwert on 4/6/17.
  */
-public class EnglishToMetricMath {
+public class LengthMath {
 
-    /*EnglishToMetricConversions*/
-
-    public double convertInchesToMillimeters(double length) {
+    /* EnglishToMetricConversions */
+    /* Inches */
+    public double convertInchToMillimeter(double length) {
         double convertedLength = length * 25.4;
         return convertedLength;
     }
 
-    public double convertInchesToCentimeters(double length) {
+    public double convertInchToCentimeter(double length) {
         double convertedLength = length * 2.54;
         return convertedLength;
     }
 
-    public double convertInchesToMeters(double length) {
+    public double convertInchToMeter(double length) {
         double convertedLength = length * .0254;
         return convertedLength;
     }
 
-    public double convertFeetToMillimeters(double length) {
+    public double convertInchToKilometer(double length) {
+        double convertedLength = length * 2.54e-5;
+        return convertedLength;
+    }
+
+    /* Feet */
+    public double convertFootToMillimeter(double length) {
         double convertedLength = length * 304.8;
         return convertedLength;
     }
 
-    public double convertFeetToCentimeters(double length) {
+    public double convertFootToCentimeter(double length) {
         double convertedLength = length * 30.48;
         return convertedLength;
     }
 
-    public double convertFeetToMeters(double length) {
+    public double convertFootToMeter(double length) {
         double convertedLength = length * .3048;
         return convertedLength;
     }
 
-    public double convertYardsToMillimeters(double length) {
+    public double convertFootToKilometer(double length) {
+        double convertedLength = length * 0.0003048;
+        return convertedLength;
+    }
+
+    /* Yards */
+    public double convertYardToMillimeter(double length) {
         double convertedLength = length * 914.4;
         return convertedLength;
     }
 
-    public double convertYardsToCentimeters(double length) {
+    public double convertYardToCentimeter(double length) {
         double convertedLength = length * 91.44;
         return convertedLength;
     }
 
-    public double convertYardsToMeters(double length) {
+    public double convertYardToMeter(double length) {
         double convertedLength = length * .9144;
         return convertedLength;
     }
 
-    /* Metric to English Conversions*/
+    public double convertYardToKilometer(double length) {
+        double convertedLength = length * 0.0009144;
+        return convertedLength;
+    }
 
+    public double convertMileToKilometer(double length) {
+        double convertedLength = length * 1.60934;
+        return convertedLength;
+    }
+
+    /* Metric to English Conversions*/
+    /* Millimeters */
     public double convertMillimeterToInch (double length) {
         double convertedLength = length * 0.03937;
         return convertedLength;
@@ -69,6 +91,9 @@ public class EnglishToMetricMath {
         return convertedLength;
     }
 
+
+
+    /* Centimeters */
     public double convertCentimeterToInch (double length) {
         double convertedLength = length * 0.393701;
         return convertedLength;
@@ -84,6 +109,7 @@ public class EnglishToMetricMath {
         return convertedLength;
     }
 
+    /* Meters */
     public double convertMeterToInch (double length) {
         double convertedLength = length * 39.3701;
         return convertedLength;
@@ -99,6 +125,6 @@ public class EnglishToMetricMath {
         return convertedLength;
     }
 
-    /* Miles and Kilometers ???????? */
+    /* I'm not including Miles and Kilometers because it's too far */
 
-}
+} /* end of LengthMath class */
