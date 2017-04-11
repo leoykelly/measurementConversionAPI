@@ -5,6 +5,9 @@ package edu.matc;
  */
 public class LengthMath {
 
+    public LengthMath() {
+    }
+
     /* EnglishToMetricConversions */
     /* Inches */
     public double convertInchToMillimeter(double length) {
@@ -27,6 +30,7 @@ public class LengthMath {
         return convertedLength;
     }
 
+
     /* Feet */
     public double convertFootToMillimeter(double length) {
         double convertedLength = length * 304.8;
@@ -48,6 +52,7 @@ public class LengthMath {
         return convertedLength;
     }
 
+
     /* Yards */
     public double convertYardToMillimeter(double length) {
         double convertedLength = length * 914.4;
@@ -68,6 +73,7 @@ public class LengthMath {
         double convertedLength = length * 0.0009144;
         return convertedLength;
     }
+
 
     /* Miles */
     public double convertMileToMillimeter(double length) {
@@ -111,7 +117,7 @@ public class LengthMath {
         double convertedLength = length * 6.21371e-7;
         return convertedLength;
     }
-    
+
 
     /* Centimeters */
     public double convertCentimeterToInch (double length) {
@@ -129,6 +135,12 @@ public class LengthMath {
         return convertedLength;
     }
 
+    public double convertCentimeterToMile (double length) {
+        double convertedLength = length * 6.21371e-6;
+        return convertedLength;
+    }
+
+
     /* Meters */
     public double convertMeterToInch (double length) {
         double convertedLength = length * 39.3701;
@@ -145,6 +157,31 @@ public class LengthMath {
         return convertedLength;
     }
 
-    /* I'm not including Miles and Kilometers because it's too far */
+    public double convertMeterToMile (double length) {
+        double convertedLength = length * 0.000621371;
+        return convertedLength;
+    }
+
+
+    /* Kilometers */
+    public double convertKilometerToInch (double length) {
+        double convertedLength = length * 39370.1;
+        return convertedLength;
+    }
+
+    public double convertKilometerToFoot (double length) {
+        double convertedLength = length * 3280.84;
+        return convertedLength;
+    }
+
+    public double convertKilometerToYard (double length) {
+        double convertedLength = length * 1093.61;
+        return convertedLength;
+    }
+
+    public double convertKilometerToMile (double length) {
+        double convertedLength = length * 0.621371;
+        return convertedLength;
+    }
 
 } /* end of LengthMath class */

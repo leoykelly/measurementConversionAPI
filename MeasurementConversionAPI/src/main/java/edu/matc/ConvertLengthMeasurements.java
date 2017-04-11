@@ -20,10 +20,10 @@ public class ConvertLengthMeasurements {
 
 
     /**
-     * The purpose of this method is to check which type of kitchen measurement the from type is.
+     * The purpose of this method is to check which type of length measurement the from type is.
      * Author: Sandi Schwert 4/9/17
      *
-     * @return the converted measurement
+     * @return a double which is the convertedMeasurement after calling the corresponding method
      */
     public double checkLengthValueFromType() {
         String fromType = conversionSet.getFromType();
@@ -49,6 +49,9 @@ public class ConvertLengthMeasurements {
 
         } else if (fromType == "meter") {
             checkMeterToMethod();
+
+        } else if (fromType == "kilometer") {
+            checkKilometerToMethod();
         }
         return convertedMeasurement;
      }
@@ -148,6 +151,12 @@ public class ConvertLengthMeasurements {
 
     }
 
+    /**
+     * The purpose if this method is to figure out which unit is desired (from the original unit "millimeter") and to
+     * send the converted number back up through the methods.
+     * Author: Sandi Schwert 4/9/17
+     * @return convertedMeasurement which is the result after the appropriate math class has been called
+     */
     private double checkMillimeterToMethod() {
         String toType = conversionSet.getToType();
         double measurementAmount = conversionSet.getMeasurementAmount();
@@ -166,10 +175,74 @@ public class ConvertLengthMeasurements {
 
     }
 
+    /**
+     * The purpose if this method is to figure out which unit is desired (from the original unit "centimeter") and to
+     * send the converted number back up through the methods.
+     * Author: Sandi Schwert 4/9/17
+     * @return convertedMeasurement which is the result after the appropriate math class has been called
+     */
     private double checkCentimeterToMethod() {
+        String toType = conversionSet.getToType();
+        double measurementAmount = conversionSet.getMeasurementAmount();
+        double convertedMeasurement = 0.00;
+
+        if (toType == "inch") {
+            convertedMeasurement = lengthMeasurementConverter.convertCentimeterToInch(measurementAmount);
+        } else if (toType == "foot") {
+            convertedMeasurement = lengthMeasurementConverter.convertCentimeterToFoot(measurementAmount);
+        } else if (toType == "yard") {
+            convertedMeasurement = lengthMeasurementConverter.convertCentimeterToYard(measurementAmount);
+        } else if (toType == "mile") {
+            convertedMeasurement = lengthMeasurementConverter.convertCentimeterToMile(measurementAmount);
+        }
+        return convertedMeasurement;
     }
 
+    /**
+     * The purpose if this method is to figure out which unit is desired (from the original unit "meter") and to
+     * send the converted number back up through the methods.
+     * Author: Sandi Schwert 4/9/17
+     * @return convertedMeasurement which is the result after the appropriate math class has been called
+     */
     private double checkMeterToMethod() {
+        String toType = conversionSet.getToType();
+        double measurementAmount = conversionSet.getMeasurementAmount();
+        double convertedMeasurement = 0.00;
+
+        if (toType == "inch") {
+            convertedMeasurement = lengthMeasurementConverter.convertMeterToInch(measurementAmount);
+        } else if (toType == "foot") {
+            convertedMeasurement = lengthMeasurementConverter.convertMeterToFoot(measurementAmount);
+        } else if (toType == "yard") {
+            convertedMeasurement = lengthMeasurementConverter.convertMeterToYard(measurementAmount);
+        } else if (toType == "mile") {
+            convertedMeasurement = lengthMeasurementConverter.convertMeterToMile(measurementAmount);
+        }
+        return convertedMeasurement;
+
+    }
+
+    /**
+     * The purpose if this method is to figure out which unit is desired (from the original unit "kilometer") and to
+     * send the converted number back up through the methods.
+     * Author: Sandi Schwert 4/9/17
+     * @return convertedMeasurement which is the result after the appropriate math class has been called
+     */
+    private double checkKilometerToMethod() {
+        String toType = conversionSet.getToType();
+        double measurementAmount = conversionSet.getMeasurementAmount();
+        double convertedMeasurement = 0.00;
+
+        if (toType == "inch") {
+            convertedMeasurement = lengthMeasurementConverter.convertKilometerToInch(measurementAmount);
+        } else if (toType == "foot") {
+            convertedMeasurement = lengthMeasurementConverter.convertKilometerToFoot(measurementAmount);
+        } else if (toType == "yard") {
+            convertedMeasurement = lengthMeasurementConverter.convertKilometerToYard(measurementAmount);
+        } else if (toType == "mile") {
+            convertedMeasurement = lengthMeasurementConverter.convertKilometerToMile(measurementAmount);
+        }
+        return convertedMeasurement;
 
     }
 
