@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1>"${conversionResult}"</h1>
+<h1><%=request.getAttribute("result")%></h1>
 </body>
 </html>

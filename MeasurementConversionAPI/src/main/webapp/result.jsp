@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1><jsp:text>${conversionResult}</jsp:text></h1>
+<h1><%=request.getAttribute("result")%></h1>
 </body>
 </html>

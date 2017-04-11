@@ -78,4 +78,23 @@ public class ConvertTemperatureMeasurements {
         return convertedMeasurement;
     }
 
+    /**
+     * The purpose if this method is to figure out which unit is desired (from the original unit "Kelvin") and to
+     * send the converted number back up through the methods.
+     * Author: Sandi Schwert 4/9/17
+     * @return convertedMeasurement which is the result after the appropriate math class has been called
+     */
+    private double checkKelvinToMethod() {
+        String toType = conversionSet.getToType();
+        double measurementAmount = conversionSet.getMeasurementAmount();
+        double convertedMeasurement = 0.00;
+
+        if (toType == "celsius") {
+            convertedMeasurement = tempMeasurementConverter.convertKelvinToCelsius(measurementAmount);
+        } else if (toType == "fahrenheit") {
+            convertedMeasurement = tempMeasurementConverter.convertKelvinToFahrenheit(measurementAmount);
+        }
+        return convertedMeasurement;
+    }
+
 } //end ConvertTemperatureMeasurements class
