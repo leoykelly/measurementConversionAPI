@@ -1,0 +1,211 @@
+2017-04-13 09:54:09,846 0    [main] DEBUG edu.matc.KitchenClassTests  - testing debug message, 0.65104125
+2017-04-13 09:54:54,506 0    [main] DEBUG edu.matc.KitchenClassTests  - testing debug message, 0.65104125
+2017-04-13 09:55:43,925 0    [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.65104125
+2017-04-13 09:55:43,931 6    [main] DEBUG edu.matc.KitchenClassTests  - Acutal: 0.65104125
+2017-04-13 09:56:37,541 0    [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.65104125
+2017-04-13 09:56:37,548 7    [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.65104125
+2017-04-13 09:56:37,549 8    [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.3958327
+2017-04-13 09:56:37,549 8    [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.3958327
+2017-04-13 09:56:37,560 19   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 09:56:37,560 19   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 09:56:37,567 26   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.46484
+2017-04-13 09:56:37,570 29   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.46484
+2017-04-13 09:58:36,699 0    [main] DEBUG edu.matc.KitchenClassTests  - test tbs to tsp
+2017-04-13 09:58:36,744 45   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 09:58:36,744 45   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 09:59:18,329 0    [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.65104125
+2017-04-13 09:59:18,334 5    [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.65104125
+2017-04-13 09:59:18,338 9    [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.3958327
+2017-04-13 09:59:18,338 9    [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.3958327
+2017-04-13 09:59:18,339 10   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 09:59:18,339 10   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 09:59:18,350 21   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to tsp
+2017-04-13 09:59:18,352 23   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 09:59:18,352 23   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 09:59:18,352 23   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.46484
+2017-04-13 09:59:18,352 23   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.46484
+2017-04-13 10:12:40,177 0    [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:12:40,196 19   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.5
+2017-04-13 10:12:40,202 25   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.5
+2017-04-13 10:15:34,624 0    [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:15:34,642 18   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.875
+2017-04-13 10:15:34,642 18   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.875
+2017-04-13 10:15:50,173 0    [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:15:50,185 12   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.5
+2017-04-13 10:15:50,186 13   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.5
+2017-04-13 10:16:27,542 0    [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:16:27,558 16   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:16:27,558 16   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:21:10,529 0    [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.65104125
+2017-04-13 10:21:10,537 8    [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.65104125
+2017-04-13 10:21:10,537 8    [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.3958327
+2017-04-13 10:21:10,537 8    [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.3958327
+2017-04-13 10:21:10,546 17   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to quart
+2017-04-13 10:21:10,546 17   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:21:10,546 17   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:21:10,563 34   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:21:10,563 34   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:21:10,564 35   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to tsp
+2017-04-13 10:21:10,564 35   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:21:10,568 39   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:21:10,571 42   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.46484
+2017-04-13 10:21:10,571 42   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.46484
+2017-04-13 10:21:10,571 42   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:21:10,571 42   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:21:10,571 42   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:21:10,572 43   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to gal
+2017-04-13 10:21:10,572 43   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:21:10,575 46   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:29:47,412 0    [main] DEBUG edu.matc.KitchenClassTests  - test cup to gal
+2017-04-13 10:29:47,426 14   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.5
+2017-04-13 10:29:47,427 15   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.5
+2017-04-13 10:30:31,138 0    [main] DEBUG edu.matc.KitchenClassTests  - test cup to quart
+2017-04-13 10:30:31,149 11   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:30:31,149 11   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:37:04,547 0    [main] DEBUG edu.matc.KitchenClassTests  - test cup to quart
+2017-04-13 10:37:04,561 14   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:37:04,562 15   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:37:04,564 17   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.65104125
+2017-04-13 10:37:04,564 17   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.65104125
+2017-04-13 10:37:04,570 23   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.3958327
+2017-04-13 10:37:04,571 24   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.3958327
+2017-04-13 10:37:04,576 29   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to quart
+2017-04-13 10:37:04,576 29   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:37:04,576 29   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:37:04,607 60   [main] DEBUG edu.matc.KitchenClassTests  - test quart to gal
+2017-04-13 10:37:04,607 60   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 6.0
+2017-04-13 10:37:04,607 60   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 6.0
+2017-04-13 10:37:04,607 60   [main] DEBUG edu.matc.KitchenClassTests  - test quart to tbs
+2017-04-13 10:37:04,608 61   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 128.0
+2017-04-13 10:37:04,608 61   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 128.0
+2017-04-13 10:37:04,623 76   [main] DEBUG edu.matc.KitchenClassTests  - test quart to tsp
+2017-04-13 10:37:04,623 76   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 384.0
+2017-04-13 10:37:04,623 76   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 384.0
+2017-04-13 10:37:04,627 80   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:37:04,627 80   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:37:04,627 80   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to tsp
+2017-04-13 10:37:04,627 80   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:37:04,627 80   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:37:04,628 81   [main] DEBUG edu.matc.KitchenClassTests  - test cup to gal
+2017-04-13 10:37:04,628 81   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.5
+2017-04-13 10:37:04,628 81   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.5
+2017-04-13 10:37:04,650 103  [main] DEBUG edu.matc.KitchenClassTests  - test cup to tbs
+2017-04-13 10:37:04,651 104  [main] DEBUG edu.matc.KitchenClassTests  - Expected: 32.0
+2017-04-13 10:37:04,651 104  [main] DEBUG edu.matc.KitchenClassTests  - Actual: 32.0
+2017-04-13 10:37:04,651 104  [main] DEBUG edu.matc.KitchenClassTests  - test cup to tsp
+2017-04-13 10:37:04,651 104  [main] DEBUG edu.matc.KitchenClassTests  - Expected: 96.0
+2017-04-13 10:37:04,655 108  [main] DEBUG edu.matc.KitchenClassTests  - Actual: 96.0
+2017-04-13 10:37:04,655 108  [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.46484
+2017-04-13 10:37:04,655 108  [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.46484
+2017-04-13 10:37:04,655 108  [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:37:04,655 108  [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:37:04,655 108  [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:37:04,661 114  [main] DEBUG edu.matc.KitchenClassTests  - test tbs to gal
+2017-04-13 10:37:04,661 114  [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:37:04,661 114  [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:37:42,435 0    [main] DEBUG edu.matc.KitchenClassTests  - test cup to quart
+2017-04-13 10:37:42,451 16   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:37:42,451 16   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:37:42,455 20   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.65104125
+2017-04-13 10:37:42,455 20   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.65104125
+2017-04-13 10:37:42,458 23   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.3958327
+2017-04-13 10:37:42,459 24   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.3958327
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to quart
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - test quart to cup
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 8.0
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 8.0
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - test quart to gal
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 6.0
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 6.0
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - test quart to tbs
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 128.0
+2017-04-13 10:37:42,465 30   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 128.0
+2017-04-13 10:37:42,478 43   [main] DEBUG edu.matc.KitchenClassTests  - test quart to tsp
+2017-04-13 10:37:42,478 43   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 384.0
+2017-04-13 10:37:42,478 43   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 384.0
+2017-04-13 10:37:42,479 44   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:37:42,479 44   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:37:42,479 44   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to tsp
+2017-04-13 10:37:42,480 45   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:37:42,487 52   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:37:42,491 56   [main] DEBUG edu.matc.KitchenClassTests  - test cup to gal
+2017-04-13 10:37:42,491 56   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.5
+2017-04-13 10:37:42,491 56   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.5
+2017-04-13 10:37:42,491 56   [main] DEBUG edu.matc.KitchenClassTests  - test cup to tbs
+2017-04-13 10:37:42,491 56   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 32.0
+2017-04-13 10:37:42,491 56   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 32.0
+2017-04-13 10:37:42,498 63   [main] DEBUG edu.matc.KitchenClassTests  - test cup to tsp
+2017-04-13 10:37:42,498 63   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 96.0
+2017-04-13 10:37:42,499 64   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 96.0
+2017-04-13 10:37:42,503 68   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.46484
+2017-04-13 10:37:42,503 68   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.46484
+2017-04-13 10:37:42,503 68   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:37:42,504 69   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:37:42,504 69   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:37:42,517 82   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to gal
+2017-04-13 10:37:42,517 82   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:37:42,517 82   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:46:21,939 0    [main] DEBUG edu.matc.KitchenClassTests  - test cup to quart
+2017-04-13 10:46:21,949 10   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:46:21,949 10   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:46:21,952 13   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.65104125
+2017-04-13 10:46:21,952 13   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.65104125
+2017-04-13 10:46:21,960 21   [main] DEBUG edu.matc.KitchenClassTests  - test gal to cup
+2017-04-13 10:46:21,960 21   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 16.0
+2017-04-13 10:46:21,960 21   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 16.0
+2017-04-13 10:46:21,960 21   [main] DEBUG edu.matc.KitchenClassTests  - test gal to tbs
+2017-04-13 10:46:21,961 22   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 256.0
+2017-04-13 10:46:21,961 22   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 256.0
+2017-04-13 10:46:21,961 22   [main] DEBUG edu.matc.KitchenClassTests  - test gal to tsp
+2017-04-13 10:46:21,961 22   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 768.0
+2017-04-13 10:46:21,961 22   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 768.0
+2017-04-13 10:46:21,974 35   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 0.3958327
+2017-04-13 10:46:21,974 35   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 0.3958327
+2017-04-13 10:46:21,974 35   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to quart
+2017-04-13 10:46:21,978 39   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:46:21,982 43   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:46:21,982 43   [main] DEBUG edu.matc.KitchenClassTests  - test quart to cup
+2017-04-13 10:46:21,982 43   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 8.0
+2017-04-13 10:46:21,988 49   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 8.0
+2017-04-13 10:46:21,988 49   [main] DEBUG edu.matc.KitchenClassTests  - test quart to gal
+2017-04-13 10:46:21,988 49   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 6.0
+2017-04-13 10:46:21,990 51   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 6.0
+2017-04-13 10:46:21,993 54   [main] DEBUG edu.matc.KitchenClassTests  - test quart to tbs
+2017-04-13 10:46:21,995 56   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 128.0
+2017-04-13 10:46:21,995 56   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 128.0
+2017-04-13 10:46:21,996 57   [main] DEBUG edu.matc.KitchenClassTests  - test quart to tsp
+2017-04-13 10:46:21,996 57   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 384.0
+2017-04-13 10:46:21,996 57   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 384.0
+2017-04-13 10:46:21,999 60   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:46:22,000 61   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:46:22,002 63   [main] DEBUG edu.matc.KitchenClassTests  - test gal to qt
+2017-04-13 10:46:22,002 63   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 4.0
+2017-04-13 10:46:22,002 63   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 4.0
+2017-04-13 10:46:22,003 64   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to tsp
+2017-04-13 10:46:22,003 64   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 3.0
+2017-04-13 10:46:22,005 66   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 3.0
+2017-04-13 10:46:22,007 68   [main] DEBUG edu.matc.KitchenClassTests  - test cup to gal
+2017-04-13 10:46:22,007 68   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.5
+2017-04-13 10:46:22,007 68   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.5
+2017-04-13 10:46:22,017 78   [main] DEBUG edu.matc.KitchenClassTests  - test cup to tbs
+2017-04-13 10:46:22,018 79   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 32.0
+2017-04-13 10:46:22,018 79   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 32.0
+2017-04-13 10:46:22,018 79   [main] DEBUG edu.matc.KitchenClassTests  - test cup to tsp
+2017-04-13 10:46:22,018 79   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 96.0
+2017-04-13 10:46:22,018 79   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 96.0
+2017-04-13 10:46:22,022 83   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.46484
+2017-04-13 10:46:22,022 83   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.46484
+2017-04-13 10:46:22,025 86   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to cup
+2017-04-13 10:46:22,025 86   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 2.0
+2017-04-13 10:46:22,034 95   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 2.0
+2017-04-13 10:46:22,036 97   [main] DEBUG edu.matc.KitchenClassTests  - test tbs to gal
+2017-04-13 10:46:22,038 99   [main] DEBUG edu.matc.KitchenClassTests  - Expected: 1.0
+2017-04-13 10:46:22,038 99   [main] DEBUG edu.matc.KitchenClassTests  - Actual: 1.0
+2017-04-13 10:55:58,912 0    [main] DEBUG edu.matc.TemperatureMathTests  - Expected: 89.6
+2017-04-13 10:55:58,923 11   [main] DEBUG edu.matc.TemperatureMathTests  - Actual: 89.6
+2017-04-13 11:08:48,703 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to C: Expected: 0.0 -- Actual: 0.0
+2017-04-13 11:09:04,805 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to C: Expected: 33.333333333333336 -- Actual: 33.333333333333336
+2017-04-13 11:11:22,018 0    [main] DEBUG edu.matc.TemperatureMathTests  - C to K: Expected: -239.81667 -- Actual: -239.81667
+2017-04-13 11:11:43,299 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to K: Expected: -239.81667 -- Actual: -239.81666666666663
