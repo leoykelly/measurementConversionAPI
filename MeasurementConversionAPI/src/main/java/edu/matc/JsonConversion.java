@@ -9,6 +9,8 @@ import javax.ws.rs.core.Response;
 @Path("/json")
 public class JsonConversion {
 
+
+
     @GET
     @Produces("text/html")
     public Response getPlainConversion(ConversionSet conversionSet) {
@@ -18,28 +20,29 @@ public class JsonConversion {
     }
 
     @GET
+    @Path("{fromType}/{amount}/{toType}/{returnType}")
     @Produces("application/json")
-    @Path("/json")
-    public ConversionSet getConversionInJSON() {
+    public Response getConversionInJSON(
+            @PathParam("fromType") String fromType,
+            @PathParam("amount") Double amount,
+            @PathParam("toType") String toType,
+            @PathParam("returnType") String returnType
+    ) {
+        ConversionSet conversionSet = new ConversionSet();
+        conversionSet.setMeasurementAmount(amount);
+        ConvertController convertController = new ConvertController();
+        Double convertedMeasurement = convertController.checkFromTypeCategory(conversionSet);
 
-        ConversionSet cs = new ConversionSet();
-        cs.setFromType("cup");
-        cs.setToType("teaspoon");
-        cs.setMeasurementAmount(2.0);
-        cs.setReturnType("json");
+        //KitchenMath kitchenMath = new KitchenMath();
+        //kitchenMath.convertCupToTsp(amount);
 
 
-        return cs;
+
+
+        String json = "{ \"fromType\" : \"" + fromType + "\", \"amount\" : \"" + amount + "\", \"toType\" : \"" + toType + "\", \"returnType\" : \"" + returnType + "\", \"Conversion\" : \"" + convertedMeasurement + "\"}";
+
+
+        return Response.status(200).entity(json).build();
     }
 
-
-    @POST
-    @Path("/post")
-    @Consumes("application/json")
-    public Response createProductInJSON() {
-
-        String result = "Conversion Set created : ";
-        return Response.status(201).entity(result).build();
-
-    }
 }

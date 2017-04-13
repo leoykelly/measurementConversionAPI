@@ -38,18 +38,20 @@ public class ConvertController {
         double convertedMeasurement = 25.5;
 
         if (fromType == "cup" || fromType == "teaspoon" || fromType == "tablespoon" || fromType == "quart" || fromType == "gallon") {
-
             ConvertKitchenMeasurements kitchenMeasurements = new ConvertKitchenMeasurements();
             convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType();
+
 
             return convertedMeasurement;
 
         } else if (fromType == "fahrenheit" || fromType == "celsius" || fromType == "kelvin") {
 
+
             ConvertTemperatureMeasurements tempMeasurement = new ConvertTemperatureMeasurements();
             tempMeasurement.checkTempValueFromType();
 
             return convertedMeasurement;
+
 
         } else if (fromType == "inch" || fromType == "centimeter" || fromType == "feet" || fromType == "meter" || fromType == "kilometer" || fromType == "mile") {
             ConvertLengthMeasurements lengthMeasurements = new ConvertLengthMeasurements();
@@ -68,3 +70,4 @@ public class ConvertController {
 
 
 } //end convertController class
+
