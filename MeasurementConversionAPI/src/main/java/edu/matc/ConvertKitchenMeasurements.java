@@ -29,25 +29,27 @@ public class ConvertKitchenMeasurements {
      *
      * @return
      */
-    public double checkKitchenMeasurementFromType(ConversionSet conversionSet) {
+    public double checkKitchenMeasurementFromType() {
         String fromType = conversionSet.getFromType();
-        Double amount = conversionSet.getMeasurementAmount();
+
         double convertedMeasurement = 0.00;
 
+        log.debug("3: Check Kitchen measurements from type: " + fromType);
+
         if (fromType == "cup"){
-            checkCupsToMethod();
+            convertedMeasurement = checkCupsToMethod();
 
         } else if (fromType == "teaspoon") {
-            checkTbsToMethod();
+            convertedMeasurement = checkTbsToMethod();
 
         } else if (fromType == "tablespoon") {
-            checkTspToMethod();
+            convertedMeasurement = checkTspToMethod();
 
         } else if (fromType == "quart") {
-            checkQuartToMethod();
+            convertedMeasurement = checkQuartToMethod();
 
         } else if (fromType == "gallon") {
-            checkGallonToMethod();
+            convertedMeasurement = checkGallonToMethod();
         }
 
         return convertedMeasurement;

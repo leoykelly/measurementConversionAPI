@@ -5,8 +5,6 @@ package edu.matc;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
@@ -17,12 +15,13 @@ import java.io.IOException;
  */
 
 
-@Path("/measurement")
+//@Path("/measurement")
 public class Controller {
 
     String conversionResult;
 
-    @GET
+   // @GET
+
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -50,7 +49,7 @@ public class Controller {
             conversionSet.setMeasurementAmount(Double.parseDouble(amount));
             conversionSet.setReturnType(returnType);
 
-            conversionResult = convertController.convertMeasurement(conversionSet);
+          //  conversionResult = convertController.convertMeasurement(conversionSet);
         }
     }
 

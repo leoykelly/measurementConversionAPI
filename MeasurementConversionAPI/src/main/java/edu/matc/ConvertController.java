@@ -21,10 +21,11 @@ public class ConvertController {
 
 
 
-    public String convertMeasurement(ConversionSet conversionSet) {
+    public double convertMeasurement(ConversionSet conversionSet) {
+        log.debug("1: inside the convertMeasurement method ");
         double resultDouble = checkFromTypeCategory(conversionSet);
-        String formattedResult = Double.toString(resultDouble);
-        return formattedResult;
+        log.debug("5: inside the convertMeasurement method second time");
+        return resultDouble;
     }
     /**
      * The purpose of this method is to determine which category of measurement the from type belongs to.
@@ -33,36 +34,36 @@ public class ConvertController {
      */
     public double checkFromTypeCategory(ConversionSet conversionSet) {
         String fromType = conversionSet.getFromType();
-        String toType = conversionSet.getToType();
-        double measurementAmount = conversionSet.getMeasurementAmount();
-        double convertedMeasurement = 25.5;
+
+        double convertedMeasurement = 0.00;
+        log.debug("Before checking from type: " + fromType);
 
         if (fromType == "cup" || fromType == "teaspoon" || fromType == "tablespoon" || fromType == "quart" || fromType == "gallon") {
-            ConvertKitchenMeasurements kitchenMeasurements = new ConvertKitchenMeasurements();
-            convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType(conversionSet);
+            ConvertKitchenMeasurements kitchenMeasurements = new ConvertKitchenMeasurements(conversionSet);
+            convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType();
+            log.debug("2. inside the checkFromTypeCategory " + fromType);
 
 
-            return convertedMeasurement;
 
         } else if (fromType == "fahrenheit" || fromType == "celsius" || fromType == "kelvin") {
 
 
             ConvertTemperatureMeasurements tempMeasurement = new ConvertTemperatureMeasurements();
-            tempMeasurement.checkTempValueFromType();
+            convertedMeasurement = tempMeasurement.checkTempValueFromType();
 
-            return convertedMeasurement;
+
 
 
         } else if (fromType == "inch" || fromType == "centimeter" || fromType == "feet" || fromType == "meter" || fromType == "kilometer" || fromType == "mile") {
             ConvertLengthMeasurements lengthMeasurements = new ConvertLengthMeasurements();
-            lengthMeasurements.checkLengthValueFromType();
+            convertedMeasurement = lengthMeasurements.checkLengthValueFromType();
 
-            return convertedMeasurement;
+
 
         } else {
-            return convertedMeasurement;
+            log.debug("Not a vaild from type " + fromType);
         }
-
+        return convertedMeasurement;
     }
 
 
