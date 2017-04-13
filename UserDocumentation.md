@@ -8,7 +8,7 @@ The Measurement Conversion API is to make conversions between temperature units,
 ## How to make a request.
 Send a request with 4 query parameters to 52.14.164.30
 
-Example: 52.14.164.30/cup/tablespoon/2/json
+Example: 52.14.164.30/measurement?fromType=cup&toType=tablespoon&amount=2&returnType=json
 
 ## Valid to and from type parameters
 
