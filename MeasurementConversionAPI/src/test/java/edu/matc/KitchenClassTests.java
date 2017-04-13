@@ -11,8 +11,6 @@ import static org.junit.Assert.assertEquals;
 public class KitchenClassTests {
     KitchenMath kitchenMath = new KitchenMath();
     private final Logger log = Logger.getLogger(this.getClass());
-
-    @Before
     double quantity;
     double expectedResult;
     double convertedQuantity;
