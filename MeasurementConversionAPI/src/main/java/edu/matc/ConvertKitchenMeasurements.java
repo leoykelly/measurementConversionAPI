@@ -73,6 +73,7 @@ public class ConvertKitchenMeasurements {
         } else if (toType == "teaspoon") {
             convertedMeasurement = kitchenMeasurementConverter.convertCupToTsp(measurementAmount);
         }
+        log.info("the value of the convertedMeasurement" + convertedMeasurement);
         return convertedMeasurement;
     }
 

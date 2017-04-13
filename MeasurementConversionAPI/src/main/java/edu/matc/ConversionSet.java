@@ -1,5 +1,7 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by Kelly on 3/22/2017.
  */
@@ -8,6 +10,7 @@ public class ConversionSet {
     private String toType;
     private String fromType;
     private double measurementAmount;
+    private final Logger log = Logger.getLogger(this.getClass());
 
     public String getReturnType() {
         return returnType;
@@ -36,6 +39,7 @@ public class ConversionSet {
     }
 
     public double getMeasurementAmount() {
+        log.debug("inside the getMeasurementAmount");
         return measurementAmount;
     }
 

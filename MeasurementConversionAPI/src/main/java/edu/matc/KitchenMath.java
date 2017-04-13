@@ -2,6 +2,8 @@ package edu.matc;
 
 import org.apache.log4j.Logger;
 
+import static java.lang.Math.*;
+
 /**
  * Created by Sandi Schwert on 3/7/17.
  * Written by Kyle
@@ -15,7 +17,7 @@ public class KitchenMath {
 
     //Teaspoon conversion methods
     public double convertTspToTbs(double quantity) {
-        double convertedQuantity = quantity * 0.333333;
+        double convertedQuantity = round(quantity * 0.333333);
         return convertedQuantity;
     }
 

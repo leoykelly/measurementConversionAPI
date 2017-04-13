@@ -31,7 +31,7 @@
 <ul>
     <li>Fahrenheit</li>
     <li>Celsius</li>
-    <li>Calvin</li>
+    <li>Kelvin</li>
 </ul>
 </div>
 
@@ -40,7 +40,9 @@
 <ul>
     <li>Inch</li>
     <li>Feet</li>
+    <li>Yard</li>
     <li>Mile</li>
+    <li>Millimeter</li>
     <li>Centimeter</li>
     <li>Meter</li>
     <li>Kilometer</li>

@@ -22,7 +22,6 @@ public class TemperatureMath {
 
     public double convertFahrenheitToCelsius(double temperature) {
         double convertedTemp = (temperature - 32) * 5 / 9;
-        /* C = (°F - 32) * 5 / 9 */
         return convertedTemp;
     }
 
