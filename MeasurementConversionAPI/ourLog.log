@@ -210,3 +210,79 @@
 2017-04-13 11:11:22,018 0    [main] DEBUG edu.matc.TemperatureMathTests  - C to K: Expected: -239.81667 -- Actual: -239.81667
 2017-04-13 11:11:43,299 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to K: Expected: -239.81667 -- Actual: -239.81666666666663
 2017-04-13 11:42:56,295 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to K: Expected: -239.81667 -- Actual: -239.81666666666663
+2017-04-13 11:53:56,959 0    [http-nio-8080-exec-10] DEBUG edu.matc.ConversionSet  - inside the getMeasurementAmount
+2017-04-13 11:57:26,328 0    [main] DEBUG edu.matc.KitchenMathTests  - test cup to quart
+2017-04-13 11:57:26,359 31   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 2.0
+2017-04-13 11:57:26,362 34   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 2.0
+2017-04-13 11:57:26,363 35   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 0.65104125
+2017-04-13 11:57:26,369 41   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 0.65104125
+2017-04-13 11:57:26,371 43   [main] DEBUG edu.matc.KitchenMathTests  - test gal to cup
+2017-04-13 11:57:26,371 43   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 16.0
+2017-04-13 11:57:26,371 43   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 16.0
+2017-04-13 11:57:26,371 43   [main] DEBUG edu.matc.KitchenMathTests  - test gal to tbs
+2017-04-13 11:57:26,371 43   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 256.0
+2017-04-13 11:57:26,371 43   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 256.0
+2017-04-13 11:57:26,371 43   [main] DEBUG edu.matc.KitchenMathTests  - test gal to tsp
+2017-04-13 11:57:26,372 44   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 768.0
+2017-04-13 11:57:26,372 44   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 768.0
+2017-04-13 11:57:26,372 44   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 0.3958327
+2017-04-13 11:57:26,372 44   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 0.3958327
+2017-04-13 11:57:26,372 44   [main] DEBUG edu.matc.KitchenMathTests  - test tbs to quart
+2017-04-13 11:57:26,372 44   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 1.0
+2017-04-13 11:57:26,384 56   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 1.0
+2017-04-13 11:57:26,385 57   [main] DEBUG edu.matc.KitchenMathTests  - test quart to cup
+2017-04-13 11:57:26,394 66   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 8.0
+2017-04-13 11:57:26,395 67   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 8.0
+2017-04-13 11:57:26,395 67   [main] DEBUG edu.matc.KitchenMathTests  - test quart to gal
+2017-04-13 11:57:26,395 67   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 6.0
+2017-04-13 11:57:26,395 67   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 6.0
+2017-04-13 11:57:26,395 67   [main] DEBUG edu.matc.KitchenMathTests  - test quart to tbs
+2017-04-13 11:57:26,413 85   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 128.0
+2017-04-13 11:57:26,413 85   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 128.0
+2017-04-13 11:57:26,414 86   [main] DEBUG edu.matc.KitchenMathTests  - test quart to tsp
+2017-04-13 11:57:26,414 86   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 384.0
+2017-04-13 11:57:26,415 87   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 384.0
+2017-04-13 11:57:26,415 87   [main] DEBUG edu.matc.KitchenMathTests  - Expected: 3.0
+2017-04-13 11:57:26,426 98   [main] DEBUG edu.matc.KitchenMathTests  - Actual: 3.0
+2017-04-13 11:57:26,438 110  [main] DEBUG edu.matc.KitchenMathTests  - test gal to qt
+2017-04-13 11:57:26,441 113  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 4.0
+2017-04-13 11:57:26,441 113  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 4.0
+2017-04-13 11:57:26,450 122  [main] DEBUG edu.matc.KitchenMathTests  - test tbs to tsp
+2017-04-13 11:57:26,450 122  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 3.0
+2017-04-13 11:57:26,450 122  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 3.0
+2017-04-13 11:57:26,452 124  [main] DEBUG edu.matc.KitchenMathTests  - test cup to gal
+2017-04-13 11:57:26,452 124  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 1.5
+2017-04-13 11:57:26,452 124  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 1.5
+2017-04-13 11:57:26,456 128  [main] DEBUG edu.matc.KitchenMathTests  - test cup to tbs
+2017-04-13 11:57:26,457 129  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 32.0
+2017-04-13 11:57:26,457 129  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 32.0
+2017-04-13 11:57:26,457 129  [main] DEBUG edu.matc.KitchenMathTests  - test cup to tsp
+2017-04-13 11:57:26,457 129  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 96.0
+2017-04-13 11:57:26,457 129  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 96.0
+2017-04-13 11:57:26,462 134  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 1.46484
+2017-04-13 11:57:26,462 134  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 1.46484
+2017-04-13 11:57:26,462 134  [main] DEBUG edu.matc.KitchenMathTests  - test tbs to cup
+2017-04-13 11:57:26,462 134  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 2.0
+2017-04-13 11:57:26,464 136  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 2.0
+2017-04-13 11:57:26,466 138  [main] DEBUG edu.matc.KitchenMathTests  - test tbs to gal
+2017-04-13 11:57:26,467 139  [main] DEBUG edu.matc.KitchenMathTests  - Expected: 1.0
+2017-04-13 11:57:26,467 139  [main] DEBUG edu.matc.KitchenMathTests  - Actual: 1.0
+2017-04-13 11:59:16,378 0    [main] DEBUG edu.matc.TemperatureMathTests  - K to C: Expected: 305.15 -- Actual: 305.15
+2017-04-13 11:59:54,558 0    [main] DEBUG edu.matc.TemperatureMathTests  - C to F: Expected: 581.27 -- Actual: 581.27
+2017-04-13 12:00:58,525 0    [main] DEBUG edu.matc.TemperatureMathTests  - C to F: Expected: 89.6 -- Actual: 89.6
+2017-04-13 12:00:58,529 4    [main] DEBUG edu.matc.TemperatureMathTests  - C to K: Expected: -239.81667 -- Actual: -239.81667
+2017-04-13 12:00:58,529 4    [main] DEBUG edu.matc.TemperatureMathTests  - F to C: Expected: 33.333333333333336 -- Actual: 33.333333333333336
+2017-04-13 12:00:58,535 10   [main] DEBUG edu.matc.TemperatureMathTests  - F to K: Expected: -239.81667 -- Actual: -239.81666666666663
+2017-04-13 12:00:58,539 14   [main] DEBUG edu.matc.TemperatureMathTests  - K to C: Expected: 305.15 -- Actual: 305.15
+2017-04-13 12:00:58,539 14   [main] DEBUG edu.matc.TemperatureMathTests  - K to F: Expected: 581.27 -- Actual: 581.27
+2017-04-13 12:06:16,409 0    [main] DEBUG edu.matc.LengthMathTests  - Inch to Centi: Expected: 2.54 -- Actual: 2.54
+2017-04-13 12:09:55,919 0    [main] DEBUG edu.matc.LengthMathTests  - Foot to Meter: Expected: 0.3048 -- Actual: 0.3048
+2017-04-13 12:09:55,928 9    [main] DEBUG edu.matc.LengthMathTests  - Inch to Centi: Expected: 2.54 -- Actual: 2.54
+2017-04-13 12:09:55,941 22   [main] DEBUG edu.matc.LengthMathTests  - Mile to Kilometer: Expected: 5.149888000000001 -- Actual: 5.149888000000001
+2017-04-13 12:11:10,949 0    [main] DEBUG edu.matc.LengthMathTests  - Foot to Meter: Expected: 0.3048 -- Actual: 0.3048
+2017-04-13 12:11:10,951 2    [main] DEBUG edu.matc.LengthMathTests  - Inch to Centi: Expected: 2.54 -- Actual: 2.54
+2017-04-13 12:11:10,963 14   [main] DEBUG edu.matc.LengthMathTests  - Mile to Kilometer: Expected: 5.149888000000001 -- Actual: 5.149888000000001
+2017-04-13 12:11:42,797 0    [main] DEBUG edu.matc.LengthMathTests  - Mile to Kilometer: Expected: 22.86 -- Actual: 22.86
+2017-04-13 12:11:42,804 7    [main] DEBUG edu.matc.LengthMathTests  - Foot to Meter: Expected: 0.3048 -- Actual: 0.3048
+2017-04-13 12:11:42,808 11   [main] DEBUG edu.matc.LengthMathTests  - Inch to Centi: Expected: 2.54 -- Actual: 2.54
+2017-04-13 12:11:42,817 20   [main] DEBUG edu.matc.LengthMathTests  - Mile to Kilometer: Expected: 5.149888000000001 -- Actual: 5.149888000000001

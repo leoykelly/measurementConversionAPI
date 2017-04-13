@@ -67,8 +67,8 @@ public class TemperatureMathTests {
     @Test
     public void testKtoC() throws Exception {
         quantity = 32;
-        expectedResult = (quantity * 1.8) + 32;
-        convertedQuantity = tempMath.convertCelsiusToFahrenheit(quantity);
+        expectedResult = quantity + 273.15;
+        convertedQuantity = tempMath.convertKelvinToCelsius(quantity);
 
         assertEquals(expectedResult, convertedQuantity, .0001);
         log.debug("K to C: Expected: " + expectedResult + " -- Actual: " + convertedQuantity);
@@ -77,8 +77,10 @@ public class TemperatureMathTests {
     @Test
     public void testKtoF() throws Exception {
         quantity = 32;
-        expectedResult = (quantity * 1.8) + 32;
-        convertedQuantity = tempMath.convertCelsiusToFahrenheit(quantity);
+        //celsius = 305.15
+        //F = 581.27
+        expectedResult = 581.27;
+        convertedQuantity = tempMath.convertKelvinToFahrenheit(quantity);
 
         assertEquals(expectedResult, convertedQuantity, .0001);
         log.debug("K to F: Expected: " + expectedResult + " -- Actual: " + convertedQuantity);
