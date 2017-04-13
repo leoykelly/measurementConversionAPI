@@ -35,33 +35,26 @@ public class ConvertController {
         String fromType = conversionSet.getFromType();
         String toType = conversionSet.getToType();
         double measurementAmount = conversionSet.getMeasurementAmount();
-        double convertedMeasurement = 0.00;
+        double convertedMeasurement = 25.5;
 
         if (fromType == "cup" || fromType == "teaspoon" || fromType == "tablespoon" || fromType == "quart" || fromType == "gallon") {
-
             ConvertKitchenMeasurements kitchenMeasurements = new ConvertKitchenMeasurements();
-            kitchenMeasurements.checkKitchenMeasurementFromType();
-
-        }
-
-        if (fromType == "fahrenheit" || fromType == "celsius" || fromType == "kelvin") {
-
+            convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType();
+            return convertedMeasurement;
+        } else if (fromType == "fahrenheit" || fromType == "celsius" || fromType == "kelvin") {
             ConvertTemperatureMeasurements tempMeasurement = new ConvertTemperatureMeasurements();
             tempMeasurement.checkTempValueFromType();
 
+            return convertedMeasurement;
+        } else if (fromType == "inch" || fromType == "centimeter" || fromType == "feet" || fromType == "meter" || fromType == "kilometer" || fromType == "mile") {
+            ConvertLengthMeasurements lengthMeasurements = new ConvertLengthMeasurements();
+            lengthMeasurements.checkLengthValueFromType();
+
+            return convertedMeasurement;
+
+        } else {
+            return convertedMeasurement;
         }
-
-        if (fromType == "inch" || fromType == "centimeter" || fromType == "feet" || fromType == "meter" || fromType == "kilometer" || fromType == "mile") {
-
-        }
-
-
-        return convertedMeasurement;
-
     }
-
-
-
-
 
 }
