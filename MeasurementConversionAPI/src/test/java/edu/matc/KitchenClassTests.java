@@ -9,13 +9,17 @@ import static org.junit.Assert.assertEquals;
  * Created by sandischwert on 4/12/17.
  */
 public class KitchenClassTests {
-    KitchenMath kitchenMath = new KitchenMath();
     private final Logger log = Logger.getLogger(this.getClass());
 
-    @Before
+    KitchenMath kitchenMath = new KitchenMath();
     double quantity;
     double expectedResult;
     double convertedQuantity;
+
+    @Before
+    public void runThisFirst() throws Exception {
+
+    }
 
 
     @Test
@@ -30,7 +34,11 @@ public class KitchenClassTests {
 
     @Test
     public void testTspToCupMath() throws Exception {
+        quantity = 19;
+        expectedResult = 19 * 0.00520833;
+        convertedQuantity = kitchenMath.convertTspToCup(19);
 
+        assertEquals("test tsp to cup", expectedResult, convertedQuantity, .0001);
 
 
     }
