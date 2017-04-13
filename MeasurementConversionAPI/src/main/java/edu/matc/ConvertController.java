@@ -39,7 +39,7 @@ public class ConvertController {
 
         if (fromType == "cup" || fromType == "teaspoon" || fromType == "tablespoon" || fromType == "quart" || fromType == "gallon") {
             ConvertKitchenMeasurements kitchenMeasurements = new ConvertKitchenMeasurements();
-            convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType();
+            convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType(conversionSet);
 
 
             return convertedMeasurement;

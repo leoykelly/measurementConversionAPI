@@ -6,40 +6,30 @@ import javax.ws.rs.core.Response;
 /**
  * Created by kvang on 4/13/17.
  */
-@Path("/json")
+@Path("/measurement")
 public class JsonConversion {
 
-
-
     @GET
-    @Produces("text/html")
-    public Response getPlainConversion(ConversionSet conversionSet) {
-
-        String output = "HTML text: " + conversionSet;
-        return Response.status(200).entity(output).build();
-    }
-
-    @GET
-    @Path("{fromType}/{amount}/{toType}/{returnType}")
     @Produces("application/json")
     public Response getConversionInJSON(
-            @PathParam("fromType") String fromType,
-            @PathParam("amount") Double amount,
-            @PathParam("toType") String toType,
-            @PathParam("returnType") String returnType
+            @QueryParam("fromType") String fromType,
+            @QueryParam("toType") String toType,
+            @QueryParam("amount") Double amount,
+            @QueryParam("returnType") String returnType
     ) {
+
         ConversionSet conversionSet = new ConversionSet();
+        conversionSet.setFromType(fromType);
+        conversionSet.setToType(toType);
         conversionSet.setMeasurementAmount(amount);
+        conversionSet.setReturnType(returnType);
         ConvertController convertController = new ConvertController();
         Double convertedMeasurement = convertController.checkFromTypeCategory(conversionSet);
 
         //KitchenMath kitchenMath = new KitchenMath();
         //kitchenMath.convertCupToTsp(amount);
 
-
-
-
-        String json = "{ \"fromType\" : \"" + fromType + "\", \"amount\" : \"" + amount + "\", \"toType\" : \"" + toType + "\", \"returnType\" : \"" + returnType + "\", \"Conversion\" : \"" + convertedMeasurement + "\"}";
+        String json = "{ \"fromType\" : \"" + conversionSet.getFromType() + "\", \"toType\" : \"" + conversionSet.getToType() + "\", \"amount\" : \"" + conversionSet.getMeasurementAmount() + "\", \"returnType\" : \"" + conversionSet.getReturnType() + "\", \"Conversion\" : \"" + convertedMeasurement + "\"}";
 
 
         return Response.status(200).entity(json).build();

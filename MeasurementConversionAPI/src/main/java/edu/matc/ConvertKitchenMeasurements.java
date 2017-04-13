@@ -29,8 +29,9 @@ public class ConvertKitchenMeasurements {
      *
      * @return
      */
-    public double checkKitchenMeasurementFromType() {
+    public double checkKitchenMeasurementFromType(ConversionSet conversionSet) {
         String fromType = conversionSet.getFromType();
+        Double amount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
         if (fromType == "cup"){
@@ -66,6 +67,7 @@ public class ConvertKitchenMeasurements {
 
         if (toType == "tablespoon") {
             convertedMeasurement = kitchenMeasurementConverter.convertCupToTbs(measurementAmount);
+            log.debug("Check cups to method");
         } else if (toType == "quart") {
             convertedMeasurement = kitchenMeasurementConverter.convertCupToQuart(measurementAmount);
         } else if (toType == "gallon") {
