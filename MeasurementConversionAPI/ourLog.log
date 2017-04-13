@@ -209,3 +209,4 @@
 2017-04-13 11:09:04,805 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to C: Expected: 33.333333333333336 -- Actual: 33.333333333333336
 2017-04-13 11:11:22,018 0    [main] DEBUG edu.matc.TemperatureMathTests  - C to K: Expected: -239.81667 -- Actual: -239.81667
 2017-04-13 11:11:43,299 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to K: Expected: -239.81667 -- Actual: -239.81666666666663
+2017-04-13 11:42:56,295 0    [main] DEBUG edu.matc.TemperatureMathTests  - F to K: Expected: -239.81667 -- Actual: -239.81666666666663
