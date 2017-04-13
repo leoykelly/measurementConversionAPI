@@ -29,7 +29,7 @@ public class ConvertKitchenMeasurements {
      *
      * @return
      */
-    public double checkKitchenMeasurementFromType() {
+    public double checkKitchenMeasurementFromType(ConversionSet conversionSet) {
         String fromType = conversionSet.getFromType();
 
         double convertedMeasurement = 0.00;

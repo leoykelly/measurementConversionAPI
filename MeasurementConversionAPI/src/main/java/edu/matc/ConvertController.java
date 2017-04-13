@@ -33,15 +33,17 @@ public class ConvertController {
      * @return
      */
     public double checkFromTypeCategory(ConversionSet conversionSet) {
+        String cup = "cup";
         String fromType = conversionSet.getFromType();
 
         double convertedMeasurement = 0.00;
         log.debug("Before checking from type: " + fromType);
 
-        if (fromType == "cup" || fromType == "teaspoon" || fromType == "tablespoon" || fromType == "quart" || fromType == "gallon") {
-            ConvertKitchenMeasurements kitchenMeasurements = new ConvertKitchenMeasurements(conversionSet);
-            convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType();
+        if (fromType == cup || fromType == "teaspoon" || fromType == "tablespoon" || fromType == "quart" || fromType == "gallon") {
+            ConvertKitchenMeasurements kitchenMeasurements = new ConvertKitchenMeasurements();
             log.debug("2. inside the checkFromTypeCategory " + fromType);
+            convertedMeasurement = kitchenMeasurements.checkKitchenMeasurementFromType(conversionSet);
+            log.debug("4. inside the checkFromTypeCategory second time " + fromType);
 
 
 
