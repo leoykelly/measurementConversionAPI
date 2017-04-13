@@ -47,7 +47,7 @@ public class ConvertController {
 
 
 
-        } else if (fromType == "fahrenheit" || fromType == "celsius" || fromType == "kelvin") {
+        } else if (fromType.equals("fahrenheit") || fromType.equals("celsius") || fromType.equals("kelvin")) {
 
 
             ConvertTemperatureMeasurements tempMeasurement = new ConvertTemperatureMeasurements();
@@ -56,7 +56,7 @@ public class ConvertController {
 
 
 
-        } else if (fromType == "inch" || fromType == "centimeter" || fromType == "feet" || fromType == "meter" || fromType == "kilometer" || fromType == "mile") {
+        } else if (fromType.equals("inch") || fromType.equals("centimeter") || fromType.equals("feet") || fromType.equals("meter") || fromType.equals("kilometer") || fromType.equals("mile")) {
             ConvertLengthMeasurements lengthMeasurements = new ConvertLengthMeasurements();
             convertedMeasurement = lengthMeasurements.checkLengthValueFromType();
 
