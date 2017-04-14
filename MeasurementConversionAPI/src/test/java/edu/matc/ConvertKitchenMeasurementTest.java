@@ -9,14 +9,14 @@ import static org.junit.Assert.*;
  * Created by sandi schwert on 4/10/17.
  */
 public class ConvertKitchenMeasurementTest {
-    private final Logger log = Logger.getLogger(this.getClass());
-    ConvertKitchenMeasurements measurement;
-    ConversionSet newSet;
-
+    //private final Logger log = Logger.getLogger(this.getClass());
+    //ConvertKitchenMeasurements measurement;
+    //ConversionSet newSet;
+/*
     @Before
     public void doThisFirst() {
     }
-
+*/
 /*
     @Test
     public void testGetCupsFromType() throws Exception {
