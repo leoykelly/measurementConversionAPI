@@ -19,20 +19,17 @@ public class JsonConversion {
     public Response getConversionInJSON(
             @QueryParam("fromType") String fromType,
             @QueryParam("toType") String toType,
-            @QueryParam("amount") Double amount,
-            @QueryParam("returnType") String returnType
+            @QueryParam("amount") Double amount
     ) {
         String json = "{error}";
 
 
         if (fromType == null || fromType.isEmpty()
                 || toType == null || toType.isEmpty()
-                || returnType == null || returnType.isEmpty()
                 || amount == null) {
             log.debug("Empty or null value: " + fromType);
             log.debug("Empty or null value: " + toType);
             log.debug("Empty or null value: " + amount);
-            log.debug("Empty or null value: " + returnType);
 
         } else {
             ConversionSet conversionSet = new ConversionSet();
@@ -40,13 +37,12 @@ public class JsonConversion {
             conversionSet.setFromType(fromType);
             conversionSet.setToType(toType);
             conversionSet.setMeasurementAmount(amount);
-            conversionSet.setReturnType(returnType);
 
             ConvertController convertController = new ConvertController();
             Double convertedMeasurement = convertController.convertMeasurement(conversionSet);
 
 
-            json = "{ \"fromType\" : \"" + conversionSet.getFromType() + "\", \"toType\" : \"" + conversionSet.getToType() + "\", \"amount\" : \"" + conversionSet.getMeasurementAmount() + "\", \"returnType\" : \"" + conversionSet.getReturnType() + "\", \"Conversion\" : \"" + convertedMeasurement + "\"}";
+            json = "{ \"fromType\" : \"" + conversionSet.getFromType() + "\", \"toType\" : \"" + conversionSet.getToType() + "\", \"amount\" : \"" + conversionSet.getMeasurementAmount() + "\", \"Converted result is\" : \"" + convertedMeasurement + "\"}";
         }
 
         return Response.status(200).entity(json).build();

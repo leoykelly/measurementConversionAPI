@@ -10,19 +10,8 @@ public class ConversionSet {
     private String toType;
     private String fromType;
     private double measurementAmount;
-    private String returnType;
 
     private final Logger log = Logger.getLogger(this.getClass());
-
-    public String getReturnType() {
-        return returnType;
-    }
-
-    public void setReturnType(String returnType) {
-        this.returnType = returnType;
-    }
-
-
 
     public String getToType() {
         log.debug("inside the getToType " + toType);

@@ -11,7 +11,7 @@
 
 <h2>How to make a request.</h2>
 <p>Send a request with 4 query parameters to 52.14.164.30</p>
-<p>Example: 52.14.164.30/?toType=cup&fromType=tablespoon&amount=2</p>
+<p>Example: 52.14.164.30/?toType=cup&fromType=tablespoon&amount=2&returnType=html</p>
 
 <h3>Valid to and from type parameters</h3>
 
