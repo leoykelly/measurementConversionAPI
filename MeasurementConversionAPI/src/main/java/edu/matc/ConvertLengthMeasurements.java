@@ -34,28 +34,28 @@ public class ConvertLengthMeasurements {
         double convertedMeasurement = 0.00;
 
         if (fromType.equals("inch")){
-            checkInchesToMethod();
+            convertedMeasurement = checkInchesToMethod();
 
         } else if (fromType.equals("foot")) {
-            checkFeetToMethod();
+            convertedMeasurement = checkFeetToMethod();
 
         } else if (fromType.equals("yard")) {
-            checkYardToMethod();
+            convertedMeasurement = checkYardToMethod();
 
         } else if (fromType.equals("mile")) {
-            checkMileToMethod();
+            convertedMeasurement = checkMileToMethod();
 
         } else if (fromType.equals("millimeter")) {
-            checkMillimeterToMethod();
+            convertedMeasurement = checkMillimeterToMethod();
 
         } else if (fromType.equals("centimeter")) {
-            checkCentimeterToMethod();
+            convertedMeasurement = checkCentimeterToMethod();
 
         } else if (fromType.equals("meter")) {
-            checkMeterToMethod();
+            convertedMeasurement = checkMeterToMethod();
 
         } else if (fromType.equals("kilometer")) {
-            checkKilometerToMethod();
+            convertedMeasurement = checkKilometerToMethod();
         }
         return convertedMeasurement;
      }

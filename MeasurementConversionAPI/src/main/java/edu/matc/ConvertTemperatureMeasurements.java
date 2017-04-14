@@ -33,13 +33,13 @@ public class ConvertTemperatureMeasurements {
         double convertedMeasurement = 0.00;
 
         if (fromType.equals("celsius")){
-            checkCelsiusToMethod();
+            convertedMeasurement = checkCelsiusToMethod();
 
         } else if (fromType.equals("fahrenheit")) {
-            checkFahrenheitToMethod();
+            convertedMeasurement = checkFahrenheitToMethod();
 
         } else if (fromType.equals("kelvin")) {
-            checkKelvinToMethod();
+            convertedMeasurement = checkKelvinToMethod();
         }
         return convertedMeasurement;
     }

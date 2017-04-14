@@ -39,10 +39,10 @@ public class ConvertKitchenMeasurements {
         if (fromType.equals("cup")){
             convertedMeasurement = checkCupsToMethod();
 
-        } else if (fromType.equals("teaspoon")) {
+        } else if (fromType.equals("tablespoon")) {
             convertedMeasurement = checkTbsToMethod();
 
-        } else if (fromType.equals("tablespoon")) {
+        } else if (fromType.equals("teaspoon")) {
             convertedMeasurement = checkTspToMethod();
 
         } else if (fromType.equals("quart")) {
