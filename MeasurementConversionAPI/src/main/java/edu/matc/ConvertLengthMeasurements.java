@@ -33,28 +33,28 @@ public class ConvertLengthMeasurements {
         String fromType = conversionSet.getFromType();
         double convertedMeasurement = 0.00;
 
-        if (fromType == "inch"){
+        if (fromType.equals("inch")){
             checkInchesToMethod();
 
-        } else if (fromType == "foot") {
+        } else if (fromType.equals("foot")) {
             checkFeetToMethod();
 
-        } else if (fromType == "yard") {
+        } else if (fromType.equals("yard")) {
             checkYardToMethod();
 
-        } else if (fromType == "mile") {
+        } else if (fromType.equals("mile")) {
             checkMileToMethod();
 
-        } else if (fromType == "millimeter") {
+        } else if (fromType.equals("millimeter")) {
             checkMillimeterToMethod();
 
-        } else if (fromType == "centimeter") {
+        } else if (fromType.equals("centimeter")) {
             checkCentimeterToMethod();
 
-        } else if (fromType == "meter") {
+        } else if (fromType.equals("meter")) {
             checkMeterToMethod();
 
-        } else if (fromType == "kilometer") {
+        } else if (fromType.equals("kilometer")) {
             checkKilometerToMethod();
         }
         return convertedMeasurement;
@@ -72,13 +72,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "millimeter") {
+        if (toType.equals("millimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertInchToMillimeter(measurementAmount);
-        } else if (toType == "centimeter") {
+        } else if (toType.equals("centimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertInchToCentimeter(measurementAmount);
-        } else if (toType == "meter") {
+        } else if (toType.equals("meter")) {
             convertedMeasurement = lengthMeasurementConverter.convertInchToMeter(measurementAmount);
-        } else if (toType == "kilometer") {
+        } else if (toType.equals("kilometer")) {
             convertedMeasurement = lengthMeasurementConverter.convertInchToKilometer(measurementAmount);
         }
         return convertedMeasurement;
@@ -96,13 +96,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "millimeter") {
+        if (toType.equals("millimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertFootToMillimeter(measurementAmount);
-        } else if (toType == "centimeter") {
+        } else if (toType.equals("centimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertFootToCentimeter(measurementAmount);
-        } else if (toType == "meter") {
+        } else if (toType.equals("meter")) {
             convertedMeasurement = lengthMeasurementConverter.convertFootToMeter(measurementAmount);
-        } else if (toType == "kilometer") {
+        } else if (toType.equals("kilometer")) {
             convertedMeasurement = lengthMeasurementConverter.convertFootToKilometer(measurementAmount);
         }
         return convertedMeasurement;
@@ -119,13 +119,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "millimeter") {
+        if (toType.equals("millimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertYardToMillimeter(measurementAmount);
-        } else if (toType == "centimeter") {
+        } else if (toType.equals("centimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertYardToCentimeter(measurementAmount);
-        } else if (toType == "meter") {
+        } else if (toType.equals("meter")) {
             convertedMeasurement = lengthMeasurementConverter.convertYardToMeter(measurementAmount);
-        } else if (toType == "kilometer") {
+        } else if (toType.equals("kilometer")) {
             convertedMeasurement = lengthMeasurementConverter.convertYardToKilometer(measurementAmount);
         }
         return convertedMeasurement;
@@ -142,13 +142,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "millimeter") {
+        if (toType.equals("millimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertMileToMillimeter(measurementAmount);
-        } else if (toType == "centimeter") {
+        } else if (toType.equals("centimeter")) {
             convertedMeasurement = lengthMeasurementConverter.convertMileToCentimeter(measurementAmount);
-        } else if (toType == "meter") {
+        } else if (toType.equals("meter")) {
             convertedMeasurement = lengthMeasurementConverter.convertMileToMeter(measurementAmount);
-        } else if (toType == "kilometer") {
+        } else if (toType.equals("kilometer")) {
             convertedMeasurement = lengthMeasurementConverter.convertMileToKilometer(measurementAmount);
         }
         return convertedMeasurement;
@@ -166,13 +166,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "inch") {
+        if (toType.equals("inch")) {
             convertedMeasurement = lengthMeasurementConverter.convertMillimeterToInch(measurementAmount);
-        } else if (toType == "foot") {
+        } else if (toType.equals("foot")) {
             convertedMeasurement = lengthMeasurementConverter.convertMillimeterToFoot(measurementAmount);
-        } else if (toType == "yard") {
+        } else if (toType.equals("yard")) {
             convertedMeasurement = lengthMeasurementConverter.convertMillimeterToYard(measurementAmount);
-        } else if (toType == "mile") {
+        } else if (toType.equals("mile")) {
             convertedMeasurement = lengthMeasurementConverter.convertMillimeterToMile(measurementAmount);
         }
         return convertedMeasurement;
@@ -190,13 +190,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "inch") {
+        if (toType.equals("inch")) {
             convertedMeasurement = lengthMeasurementConverter.convertCentimeterToInch(measurementAmount);
-        } else if (toType == "foot") {
+        } else if (toType.equals("foot")) {
             convertedMeasurement = lengthMeasurementConverter.convertCentimeterToFoot(measurementAmount);
-        } else if (toType == "yard") {
+        } else if (toType.equals("yard")) {
             convertedMeasurement = lengthMeasurementConverter.convertCentimeterToYard(measurementAmount);
-        } else if (toType == "mile") {
+        } else if (toType.equals("mile")) {
             convertedMeasurement = lengthMeasurementConverter.convertCentimeterToMile(measurementAmount);
         }
         return convertedMeasurement;
@@ -213,13 +213,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "inch") {
+        if (toType.equals("inch")) {
             convertedMeasurement = lengthMeasurementConverter.convertMeterToInch(measurementAmount);
-        } else if (toType == "foot") {
+        } else if (toType.equals("foot")) {
             convertedMeasurement = lengthMeasurementConverter.convertMeterToFoot(measurementAmount);
-        } else if (toType == "yard") {
+        } else if (toType.equals("yard")) {
             convertedMeasurement = lengthMeasurementConverter.convertMeterToYard(measurementAmount);
-        } else if (toType == "mile") {
+        } else if (toType.equals("mile")) {
             convertedMeasurement = lengthMeasurementConverter.convertMeterToMile(measurementAmount);
         }
         return convertedMeasurement;
@@ -237,13 +237,13 @@ public class ConvertLengthMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "inch") {
+        if (toType.equals("inch")) {
             convertedMeasurement = lengthMeasurementConverter.convertKilometerToInch(measurementAmount);
-        } else if (toType == "foot") {
+        } else if (toType.equals("foot")) {
             convertedMeasurement = lengthMeasurementConverter.convertKilometerToFoot(measurementAmount);
-        } else if (toType == "yard") {
+        } else if (toType.equals("yard")) {
             convertedMeasurement = lengthMeasurementConverter.convertKilometerToYard(measurementAmount);
-        } else if (toType == "mile") {
+        } else if (toType.equals("mile")) {
             convertedMeasurement = lengthMeasurementConverter.convertKilometerToMile(measurementAmount);
         }
         return convertedMeasurement;
