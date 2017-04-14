@@ -32,14 +32,14 @@ public class ConvertTemperatureMeasurements {
         String fromType = conversionSet.getFromType();
         double convertedMeasurement = 0.00;
 
-        if (fromType == "celsius"){
-            checkCelsiusToMethod();
+        if (fromType.equals("celsius")){
+            convertedMeasurement = checkCelsiusToMethod();
 
-        } else if (fromType == "fahrenheit") {
-            checkFahrenheitToMethod();
+        } else if (fromType.equals("fahrenheit")) {
+            convertedMeasurement = checkFahrenheitToMethod();
 
-        } else if (fromType == "kelvin") {
-            checkKelvinToMethod();
+        } else if (fromType.equals("kelvin")) {
+            convertedMeasurement = checkKelvinToMethod();
         }
         return convertedMeasurement;
     }
@@ -55,9 +55,9 @@ public class ConvertTemperatureMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "fahrenheit") {
+        if (toType.equals("fahrenheit")) {
             convertedMeasurement = tempMeasurementConverter.convertCelsiusToFahrenheit(measurementAmount);
-        } else if (toType == "kelvin") {
+        } else if (toType.equals("kelvin")) {
             convertedMeasurement = tempMeasurementConverter.convertCelsiusToKelvin(measurementAmount);
         }
         return convertedMeasurement;
@@ -74,9 +74,9 @@ public class ConvertTemperatureMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "celsius") {
+        if (toType.equals("celsius")) {
             convertedMeasurement = tempMeasurementConverter.convertFahrenheitToCelsius(measurementAmount);
-        } else if (toType == "kelvin") {
+        } else if (toType.equals("kelvin")) {
             convertedMeasurement = tempMeasurementConverter.convertFahrenheitToKelvin(measurementAmount);
         }
         return convertedMeasurement;
@@ -93,9 +93,9 @@ public class ConvertTemperatureMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "celsius") {
+        if (toType.equals("celsius")) {
             convertedMeasurement = tempMeasurementConverter.convertKelvinToCelsius(measurementAmount);
-        } else if (toType == "fahrenheit") {
+        } else if (toType.equals("fahrenheit")) {
             convertedMeasurement = tempMeasurementConverter.convertKelvinToFahrenheit(measurementAmount);
         }
         return convertedMeasurement;

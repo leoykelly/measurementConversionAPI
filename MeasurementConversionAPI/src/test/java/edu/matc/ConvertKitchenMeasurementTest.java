@@ -2,8 +2,6 @@ package edu.matc;
 
 import org.apache.log4j.Logger;
 import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * Created by sandi schwert on 4/10/17.

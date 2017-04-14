@@ -1,46 +1,49 @@
 package edu.matc;
 
+import org.apache.log4j.Logger;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
 /**
  * Created by kvang on 4/13/17.
  */
-@Path("/json")
+@Path("/")
 public class JsonConversion {
 
-
-
-    @GET
-    @Produces("text/html")
-    public Response getPlainConversion(ConversionSet conversionSet) {
-
-        String output = "HTML text: " + conversionSet;
-        return Response.status(200).entity(output).build();
-    }
+    private final Logger log = Logger.getLogger(this.getClass());
 
     @GET
-    @Path("{fromType}/{amount}/{toType}/{returnType}")
+    @Path("/measurement")
     @Produces("application/json")
     public Response getConversionInJSON(
-            @PathParam("fromType") String fromType,
-            @PathParam("amount") Double amount,
-            @PathParam("toType") String toType,
-            @PathParam("returnType") String returnType
+            @QueryParam("fromType") String fromType,
+            @QueryParam("toType") String toType,
+            @QueryParam("amount") Double amount
     ) {
-        ConversionSet conversionSet = new ConversionSet();
-        conversionSet.setMeasurementAmount(amount);
-        ConvertController convertController = new ConvertController();
-        Double convertedMeasurement = convertController.checkFromTypeCategory(conversionSet);
-
-        //KitchenMath kitchenMath = new KitchenMath();
-        //kitchenMath.convertCupToTsp(amount);
+        String json = "{error}";
 
 
+        if (fromType == null || fromType.isEmpty()
+                || toType == null || toType.isEmpty()
+                || amount == null) {
+            log.debug("Empty or null value: " + fromType);
+            log.debug("Empty or null value: " + toType);
+            log.debug("Empty or null value: " + amount);
+
+        } else {
+            ConversionSet conversionSet = new ConversionSet();
+
+            conversionSet.setFromType(fromType);
+            conversionSet.setToType(toType);
+            conversionSet.setMeasurementAmount(amount);
+
+            ConvertController convertController = new ConvertController();
+            Double convertedMeasurement = convertController.convertMeasurement(conversionSet);
 
 
-        String json = "{ \"fromType\" : \"" + fromType + "\", \"amount\" : \"" + amount + "\", \"toType\" : \"" + toType + "\", \"returnType\" : \"" + returnType + "\", \"Conversion\" : \"" + convertedMeasurement + "\"}";
-
+            json = "{ \"fromType\" : \"" + conversionSet.getFromType() + "\", \"toType\" : \"" + conversionSet.getToType() + "\", \"amount\" : \"" + conversionSet.getMeasurementAmount() + "\", \"Converted result is\" : \"" + convertedMeasurement + "\"}";
+        }
 
         return Response.status(200).entity(json).build();
     }

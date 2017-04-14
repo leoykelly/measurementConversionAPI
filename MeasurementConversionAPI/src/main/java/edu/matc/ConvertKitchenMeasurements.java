@@ -31,22 +31,25 @@ public class ConvertKitchenMeasurements {
      */
     public double checkKitchenMeasurementFromType() {
         String fromType = conversionSet.getFromType();
+
         double convertedMeasurement = 0.00;
 
-        if (fromType == "cup"){
-            checkCupsToMethod();
+        log.debug("3: Check Kitchen measurements from type: " + fromType);
 
-        } else if (fromType == "teaspoon") {
-            checkTbsToMethod();
+        if (fromType.equals("cup")){
+            convertedMeasurement = checkCupsToMethod();
 
-        } else if (fromType == "tablespoon") {
-            checkTspToMethod();
+        } else if (fromType.equals("tablespoon")) {
+            convertedMeasurement = checkTbsToMethod();
 
-        } else if (fromType == "quart") {
-            checkQuartToMethod();
+        } else if (fromType.equals("teaspoon")) {
+            convertedMeasurement = checkTspToMethod();
 
-        } else if (fromType == "gallon") {
-            checkGallonToMethod();
+        } else if (fromType.equals("quart")) {
+            convertedMeasurement = checkQuartToMethod();
+
+        } else if (fromType.equals("gallon")) {
+            convertedMeasurement = checkGallonToMethod();
         }
 
         return convertedMeasurement;
@@ -64,13 +67,14 @@ public class ConvertKitchenMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "tablespoon") {
+        if (toType.equals("tablespoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertCupToTbs(measurementAmount);
-        } else if (toType == "quart") {
+            log.debug("Check cups to method");
+        } else if (toType.equals("quart")) {
             convertedMeasurement = kitchenMeasurementConverter.convertCupToQuart(measurementAmount);
-        } else if (toType == "gallon") {
+        } else if (toType.equals("gallon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertCupToGallon(measurementAmount);
-        } else if (toType == "teaspoon") {
+        } else if (toType.equals("teaspoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertCupToTsp(measurementAmount);
         }
         log.info("the value of the convertedMeasurement" + convertedMeasurement);
@@ -88,13 +92,13 @@ public class ConvertKitchenMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "cup") {
+        if (toType.equals("cup")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTbsToCup(measurementAmount);
-        } else if (toType == "quart") {
+        } else if (toType.equals("quart")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTbsToQuart(measurementAmount);
-        } else if (toType == "gallon") {
+        } else if (toType.equals("gallon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTbsToGallon(measurementAmount);
-        } else if (toType == "teaspoon") {
+        } else if (toType.equals("teaspoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTbsToTsp(measurementAmount);
         }
         return convertedMeasurement;
@@ -111,13 +115,13 @@ public class ConvertKitchenMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "cup") {
+        if (toType.equals("cup")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTspToCup(measurementAmount);
-        } else if (toType == "quart") {
+        } else if (toType.equals("quart")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTspToQuart(measurementAmount);
-        } else if (toType == "gallon") {
+        } else if (toType.equals("gallon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTspToGallon(measurementAmount);
-        } else if (toType == "tbs") {
+        } else if (toType.equals("tablespoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertTspToTbs(measurementAmount);
         }
         return convertedMeasurement;
@@ -134,13 +138,13 @@ public class ConvertKitchenMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "cup") {
+        if (toType.equals("cup")) {
             convertedMeasurement = kitchenMeasurementConverter.convertQuartToCup(measurementAmount);
-        } else if (toType == "teaspoon") {
+        } else if (toType.equals("teaspoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertQuartToTsp(measurementAmount);
-        } else if (toType == "gallon") {
+        } else if (toType.equals("gallon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertQuartToGallon(measurementAmount);
-        } else if (toType == "tablespoon") {
+        } else if (toType.equals("tablespoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertQuartToTbs(measurementAmount);
         }
         return convertedMeasurement;
@@ -157,13 +161,13 @@ public class ConvertKitchenMeasurements {
         double measurementAmount = conversionSet.getMeasurementAmount();
         double convertedMeasurement = 0.00;
 
-        if (toType == "cup") {
+        if (toType.equals("cup")) {
             convertedMeasurement = kitchenMeasurementConverter.convertGallonToCup(measurementAmount);
-        } else if (toType == "teaspoon") {
+        } else if (toType.equals("teaspoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertGallonToTsp(measurementAmount);
-        } else if (toType == "quart") {
+        } else if (toType.equals("quart")) {
             convertedMeasurement = kitchenMeasurementConverter.convertGallonToQuart(measurementAmount);
-        } else if (toType == "tablespoon") {
+        } else if (toType.equals("tablespoon")) {
             convertedMeasurement = kitchenMeasurementConverter.convertGallonToTbs(measurementAmount);
         }
         return convertedMeasurement;
