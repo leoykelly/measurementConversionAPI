@@ -56,7 +56,7 @@ public class ConvertController {
 
 
 
-        } else if (fromType.equals("inch") || fromType.equals("centimeter") || fromType.equals("foot") || fromType.equals("meter") || fromType.equals("kilometer") || fromType.equals("mile")) {
+        } else if (fromType.equals("inch") || fromType.equals("millimeter") || fromType.equals("yard") || fromType.equals("centimeter") || fromType.equals("foot") || fromType.equals("meter") || fromType.equals("kilometer") || fromType.equals("mile")) {
             ConvertLengthMeasurements lengthMeasurements = new ConvertLengthMeasurements(conversionSet);
             convertedMeasurement = lengthMeasurements.checkLengthValueFromType();
 
